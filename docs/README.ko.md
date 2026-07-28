@@ -83,3 +83,6 @@ bash scripts/build_manuscript.sh   # PDF 빌드
 `scripts/`·`docs/`·환경 매니페스트는 MIT([../LICENSE](../LICENSE)), 원고
 본문과 그림은 CC BY 4.0, MDPI 템플릿은 MDPI 소유입니다. 정확한 범위와 데이터셋
 이용 조건은 [../NOTICE](../NOTICE)를 보세요.
+
+Zenodo 아카이브: https://doi.org/10.5281/zenodo.21638616 (concept DOI, 항상
+최신 release를 가리킵니다).

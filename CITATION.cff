@@ -16,6 +16,8 @@ abstract: >-
 type: software
 license: MIT
 version: 1.0.0
+doi: 10.5281/zenodo.21638616
+repository-code: "https://github.com/RURUGURU/isohr-wearable-stress"
 authors:
   - family-names: Kwon
     given-names: Nowon

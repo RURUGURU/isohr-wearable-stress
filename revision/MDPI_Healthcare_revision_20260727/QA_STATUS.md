@@ -9,7 +9,7 @@
 - review1–review3 자체 포함: Pass
 - response letter와 action matrix 포함: Pass
 - public repository URL: Pass — 원고 Data Availability에 삽입 완료
-- archival DOI: Not run — Zenodo 저장소 토글이 OFF라 아직 발급 불가
+- archival DOI: Pass — concept 10.5281/zenodo.21638616, v1.0.0 10.5281/zenodo.21638617
 
 ## 코드와 환경
 
@@ -76,7 +76,7 @@
 - GitHub Actions CI(데이터 불요 검사): Pass
 - 개인 이메일 제거: Pass — 제1저자 개인 주소 삭제, 교신저자 기관 주소 유지
 - Data Availability에 저장소 URL 삽입: Pass — archival DOI만 미정
-- Zenodo webhook: Not run — 저장소 토글이 아직 OFF라 release해도 아카이빙되지 않음
+- Zenodo webhook 및 v1.0.0 아카이빙: Pass — 레코드에 ORCID·MIT·open access 반영 확인
 
 ## 잔여 위험
 
@@ -91,6 +91,5 @@
   MDPI 제작 단계에서 Figure1.png 형식 요구 시 재명명이 필요합니다.
 - 300초 WESAD iso-HR 표본은 26개 창으로 감소해 해석하지 않습니다.
 - Nurse label 품질과 15명 표본은 현장 일반화 결론을 제한합니다.
-- archival DOI는 Zenodo 저장소 토글을 켠 뒤 release를 발행해야 발급됩니다.
 - MDPI가 전 저자 이메일을 요구하면 제1저자 기관 주소를 추가해야 합니다.
 - portal template 최신 여부는 제출 시점에 확인이 필요합니다.

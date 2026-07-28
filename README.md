@@ -127,4 +127,7 @@ Analysis code, documentation and the environment manifests are MIT
 LaTeX template files remain MDPI's property — see [NOTICE](NOTICE) for the exact
 scope and for the dataset terms.
 
+Archived at Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21638616.svg)](https://doi.org/10.5281/zenodo.21638616)
+The concept DOI `10.5281/zenodo.21638616` always resolves to the latest release.
+
 Please cite both the software and the article — see [CITATION.cff](CITATION.cff).
