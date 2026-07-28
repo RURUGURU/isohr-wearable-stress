@@ -1,0 +1,40 @@
+window_seconds=64 step_seconds=64
+EDA backend: cvxEDA(neurokit2)
+WESAD    windows=566  +146/-420  subjects=15  (123s)
+StrPred  windows=1427  +485/-942  subjects=35  (139s)
+Nurse    windows=4660  +3713/-947  subjects=15  (282s)
+
+=== WITHIN-corpus LOSO (reference) ===
+  WESAD   : single(scr_count)=0.896  LR=0.872  GBM=0.879
+  StrPred : single(scr_count)=0.564  LR=0.613  GBM=0.621
+  Nurse   : single(scr_count)=0.554  LR=0.449  GBM=0.489
+
+=== (A) LEAVE-ONE-DATASET-OUT + domain-generalization (CORAL) ===
+  test        single      LR     GBM   CORAL
+  WESAD        0.896   0.890   0.758   0.876
+  StrPred      0.564   0.563   0.551   0.561
+  Nurse        0.554   0.545   0.559   0.540
+  single=fixed SCR rule (no train); LR/GBM/CORAL trained on other corpora.
+  -> if CORAL & GBM do NOT beat LR/single, even a DG method cannot rescue transfer.
+
+=== (C) NURSE stratified by movement (real-world activity confound) ===
+  movement tertiles (ACC std, g): low<0.057  mid<0.128  high>=
+  low-move : n= 1553 (+1159/-394)  med-move=0.032  single=0.477  LR=0.386
+  mid-move : n= 1553 (+1270/-283)  med-move=0.087  single=0.571  LR=0.487
+  high-move: n= 1554 (+1284/-270)  med-move=0.185  single=0.502  LR=0.439
+  -> tests whether real-world physical activity (high movement) degrades the EDA stress signal.
+
+=== (2) iso-HR decomposition per corpus: transfer-weakness = HR-leakage or weak EDA? ===
+  corpus     unmatch_HR  match_HR match_nonHR match_EDA+T  HR-leak    mN
+  WESAD           0.959     0.933       0.925       0.881   +0.009   146
+  StrPred         0.689     0.660       0.661       0.645   -0.002   738
+  Nurse           0.606     0.524       0.523       0.535   +0.001  1116
+  -> EDA+T(matched) ~0.5 for StrPred/Nurse => the EDA signal itself is weak (NOT just HR-leakage);
+     WESAD keeps strong matched EDA => transfer-weakness is genuine stressor-type, not HR-confound alone.
+
+=== (3) cross-corpus AUROC with subject-bootstrap 95% CI (single & LR) ===
+  test=WESAD    : single=0.896 [0.825-0.953]   LR=0.890 [0.810-0.949]
+  test=StrPred  : single=0.564 [0.524-0.609]   LR=0.563 [0.528-0.604]
+  test=Nurse    : single=0.554 [0.407-0.694]   LR=0.545 [0.419-0.665]
+
+TOTAL 458s

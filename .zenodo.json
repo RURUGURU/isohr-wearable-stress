@@ -1,0 +1,38 @@
+{
+  "title": "Iso-heart-rate, cross-corpus evaluation of wrist-wearable stress detection (analysis code)",
+  "description": "<p>Analysis code for an iso-heart-rate, cross-corpus evaluation of binary stress-versus-non-stress detection from wrist-worn Empatica E4 recordings across the WESAD, Stress-Predict and Nurse corpora.</p><p>Includes the iso-HR matching procedure, leave-one-subject-out and leave-one-dataset-out protocols, four unsupervised domain-adaptation baselines (CORAL, subspace alignment, transfer component analysis, importance weighting), an accelerometer context-aware transfer model, leave-one-dataset-out error stratification, and the reviewer-requested robustness analyses (non-overlapping and 300 s windows, HRV ablation, label-alignment sensitivity, feature-shift analysis, Nurse operational metrics).</p><p><strong>No dataset is redistributed.</strong> Each corpus must be obtained from its original source under its own licence.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Kwon, Nowon",
+      "affiliation": "AI-driven Medical Innovation Center, Kyungpook National University Hospital, Daegu, Republic of Korea",
+      "orcid": "0000-0002-5072-3632"
+    },
+    {
+      "name": "Yoon, Seonkyung",
+      "affiliation": "Department of Nursing, Saekyung University, Yeongwol, Republic of Korea"
+    },
+    {
+      "name": "Hur, Jungyi",
+      "affiliation": "Department of Nursing, Saekyung University, Yeongwol, Republic of Korea"
+    },
+    {
+      "name": "Kang, Hye Seung",
+      "affiliation": "Department of Nursing, Saekyung University, Yeongwol, Republic of Korea"
+    }
+  ],
+  "keywords": [
+    "wearable sensors",
+    "electrodermal activity",
+    "stress detection",
+    "domain adaptation",
+    "cross-corpus evaluation",
+    "heart-rate confounding",
+    "nursing workforce",
+    "digital health",
+    "reproducibility"
+  ],
+  "language": "eng"
+}

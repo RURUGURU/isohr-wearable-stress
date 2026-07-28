@@ -1,0 +1,114 @@
+{
+  "activity_features": [
+    "acc_mag_mean",
+    "acc_mag_std",
+    "acc_enmo",
+    "acc_jerk"
+  ],
+  "analysis": "wrist-accelerometer context-aware transfer model",
+  "notes": [
+    "Activity features are computed identically in all three corpora from the 32 Hz wrist accelerometer magnitude in g.",
+    "activity_label_auroc keeps its direction: values above 0.5 mean more movement in stress windows, below 0.5 mean less. Direction is not consistent across corpora, so activity carries corpus-specific protocol information rather than a transferable stress channel.",
+    "activity_only_lr_auroc trains on activity alone and is reported to show how much of any context-model change is protocol identity rather than stress physiology."
+  ],
+  "step_seconds": 32.0,
+  "transfer": [
+    {
+      "activity_only_lr_auroc": 0.7920774952430375,
+      "base_gbm_auroc": 0.736682564394033,
+      "base_lr_auroc": 0.8899061786970452,
+      "context_gbm_auroc": 0.7615835124916599,
+      "context_lr_auroc": 0.8355656048961706,
+      "context_lr_ci_high": 0.8803847400624013,
+      "context_lr_ci_low": 0.7968960913877504,
+      "context_minus_base_lr": -0.05434057380087465,
+      "single_scr_auroc": 0.8974658363604913,
+      "target": "WESAD"
+    },
+    {
+      "activity_only_lr_auroc": 0.48596130638105295,
+      "base_gbm_auroc": 0.5583698632568128,
+      "base_lr_auroc": 0.5637916729521798,
+      "context_gbm_auroc": 0.5121469390290435,
+      "context_lr_auroc": 0.5201726149805223,
+      "context_lr_ci_high": 0.5595447723707371,
+      "context_lr_ci_low": 0.4816239798970338,
+      "context_minus_base_lr": -0.04361905797165755,
+      "single_scr_auroc": 0.5628322078567436,
+      "target": "StrPred"
+    },
+    {
+      "activity_only_lr_auroc": 0.5445429135054056,
+      "base_gbm_auroc": 0.5592002340019528,
+      "base_lr_auroc": 0.5412141951622935,
+      "context_gbm_auroc": 0.5447027467485905,
+      "context_lr_auroc": 0.5189297539958854,
+      "context_lr_ci_high": 0.6226660435355348,
+      "context_lr_ci_low": 0.4210587816744192,
+      "context_minus_base_lr": -0.022284441166408153,
+      "single_scr_auroc": 0.5533304459764,
+      "target": "Nurse"
+    }
+  ],
+  "transfer_features": [
+    "scr_count",
+    "phasic_auc",
+    "scr_amp_mean",
+    "scr_amp_max",
+    "scl_slope",
+    "eda_decay",
+    "temp_slope",
+    "hr_slope"
+  ],
+  "window_seconds": 64.0,
+  "within_corpus": [
+    {
+      "activity_label_auroc": {
+        "acc_enmo": 0.6780463093384734,
+        "acc_jerk": 0.8277114686040478,
+        "acc_mag_mean": 0.5150946038335763,
+        "acc_mag_std": 0.771719343333251
+      },
+      "activity_median_g": 0.020337202554790275,
+      "base_loso_gbm": 0.8856393275178952,
+      "base_loso_lr": 0.8758741690760373,
+      "context_loso_gbm": 0.9300623553347995,
+      "context_loso_lr": 0.8975749787893017,
+      "corpus": "WESAD",
+      "n_subjects": 15,
+      "n_windows": 1133
+    },
+    {
+      "activity_label_auroc": {
+        "acc_enmo": 0.42918592991578897,
+        "acc_jerk": 0.48090775380902095,
+        "acc_mag_mean": 0.42472358531585813,
+        "acc_mag_std": 0.4688800546617803
+      },
+      "activity_median_g": 0.0277546508312249,
+      "base_loso_gbm": 0.6327722218771352,
+      "base_loso_lr": 0.6280475495372382,
+      "context_loso_gbm": 0.6705094260513076,
+      "context_loso_lr": 0.6813217103103121,
+      "corpus": "StrPred",
+      "n_subjects": 35,
+      "n_windows": 2846
+    },
+    {
+      "activity_label_auroc": {
+        "acc_enmo": 0.5916309169719725,
+        "acc_jerk": 0.5896287095129863,
+        "acc_mag_mean": 0.584089996872875,
+        "acc_mag_std": 0.5681064552420196
+      },
+      "activity_median_g": 0.08651386933958075,
+      "base_loso_gbm": 0.48940609472805274,
+      "base_loso_lr": 0.4496594823923744,
+      "context_loso_gbm": 0.5716871110516158,
+      "context_loso_lr": 0.46768503586342147,
+      "corpus": "Nurse",
+      "n_subjects": 15,
+      "n_windows": 9226
+    }
+  ]
+}

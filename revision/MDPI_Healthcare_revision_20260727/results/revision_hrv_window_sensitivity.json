@@ -1,0 +1,64 @@
+{
+  "analysis": "HRV feature contribution by window length",
+  "hrv_features": [
+    "artifact_pct",
+    "ibi_cov",
+    "n_nn",
+    "pnn50",
+    "rmssd",
+    "sdnn"
+  ],
+  "model": "within-corpus LOSO histogram gradient boosting",
+  "protocols": [
+    {
+      "corpora": {
+        "Nurse": {
+          "difference": 0.004573230028830921,
+          "n_windows": 9226,
+          "with_hrv_auroc": 0.6210385314378191,
+          "without_hrv_auroc": 0.6164653014089881
+        },
+        "StrPred": {
+          "difference": 0.0034424276574410717,
+          "n_windows": 2846,
+          "with_hrv_auroc": 0.6750679944628327,
+          "without_hrv_auroc": 0.6716255668053916
+        },
+        "WESAD": {
+          "difference": 0.016774985379033214,
+          "n_windows": 1133,
+          "with_hrv_auroc": 0.9549633034324264,
+          "without_hrv_auroc": 0.9381883180533932
+        }
+      },
+      "protocol": "64 s",
+      "step_seconds": 32.0,
+      "window_seconds": 64.0
+    },
+    {
+      "corpora": {
+        "Nurse": {
+          "difference": -0.010170306222937797,
+          "n_windows": 1770,
+          "with_hrv_auroc": 0.6373899926531505,
+          "without_hrv_auroc": 0.6475602988760883
+        },
+        "StrPred": {
+          "difference": 0.009528946422150297,
+          "n_windows": 557,
+          "with_hrv_auroc": 0.6605814178629713,
+          "without_hrv_auroc": 0.651052471440821
+        },
+        "WESAD": {
+          "difference": -0.005760368663594306,
+          "n_windows": 166,
+          "with_hrv_auroc": 0.9594854070660523,
+          "without_hrv_auroc": 0.9652457757296466
+        }
+      },
+      "protocol": "300 s",
+      "step_seconds": 150.0,
+      "window_seconds": 300.0
+    }
+  ]
+}

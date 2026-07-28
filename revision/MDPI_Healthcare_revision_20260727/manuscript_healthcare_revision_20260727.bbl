@@ -1,0 +1,452 @@
+\begin{thebibliography}{-------}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[Can \em{et~al.}(2019)Can, Arnrich, and Ersoy]{can2019survey}
+Can, Y.S.; Arnrich, B.; Ersoy, C.
+\newblock Stress Detection in Daily Life Scenarios Using Smart Phones and
+  Wearable Sensors: A Survey.
+\newblock {\em J. Biomed. Inform.} {\bf 2019}, {\em 92},~103139.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.jbi.2019.103139}{\detokenize{10.1016/j.jbi.2019.103139}}}.
+
+\bibitem[Schmidt \em{et~al.}(2019)Schmidt, Reiss, Duerichen, and
+  Van~Laerhoven]{schmidt2019review}
+Schmidt, P.; Reiss, A.; Duerichen, R.; Van~Laerhoven, K.
+\newblock Wearable-Based Affect Recognition---A Review.
+\newblock {\em Sensors} {\bf 2019}, {\em 19},~4079.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/s19194079}{\detokenize{10.3390/s19194079}}}.
+
+\bibitem[Schmidt \em{et~al.}(2018)Schmidt, Reiss, Duerichen, Marberger, and
+  Van~Laerhoven]{schmidt2018wesad}
+Schmidt, P.; Reiss, A.; Duerichen, R.; Marberger, C.; Van~Laerhoven, K.
+\newblock Introducing {WESAD}, a Multimodal Dataset for Wearable Stress and
+  Affect Detection.
+\newblock  Proceedings of the 20th ACM International Conference on Multimodal
+  Interaction (ICMI),  2018, pp. 400--408.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1145/3242969.3242985}{\detokenize{10.1145/3242969.3242985}}}.
+
+\bibitem[Gjoreski \em{et~al.}(2017)Gjoreski, Lu{\v{s}}trek, Gams, and
+  Gjoreski]{gjoreski2017wrist}
+Gjoreski, M.; Lu{\v{s}}trek, M.; Gams, M.; Gjoreski, H.
+\newblock Monitoring Stress with a Wrist Device Using Context.
+\newblock {\em J. Biomed. Inform.} {\bf 2017}, {\em 73},~159--170.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.jbi.2017.08.006}{\detokenize{10.1016/j.jbi.2017.08.006}}}.
+
+\bibitem[Siirtola and R\"oning(2020)]{siirtola2020}
+Siirtola, P.; R\"oning, J.
+\newblock Comparison of Regression and Classification Models for
+  User-Independent and Personal Stress Detection.
+\newblock {\em Sensors} {\bf 2020}, {\em 20},~4402.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/s20164402}{\detokenize{10.3390/s20164402}}}.
+
+\bibitem[Gonz{\'a}lez~Ram{\'i}rez \em{et~al.}(2023)Gonz{\'a}lez~Ram{\'i}rez,
+  Garc{\'i}a~V{\'a}zquez, Rodr{\'i}guez, Padilla-L{\'o}pez, Galindo-Aldana, and
+  Cuevas-Gonz{\'a}lez]{gonzalezramirez2023wearablesstress}
+Gonz{\'a}lez~Ram{\'i}rez, M.L.; Garc{\'i}a~V{\'a}zquez, J.P.; Rodr{\'i}guez,
+  M.D.; Padilla-L{\'o}pez, L.A.; Galindo-Aldana, G.M.; Cuevas-Gonz{\'a}lez, D.
+\newblock Wearables for Stress Management: A Scoping Review.
+\newblock {\em Healthcare} {\bf 2023}, {\em 11},~2369.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/healthcare11172369}{\detokenize{10.3390/healthcare11172369}}}.
+
+\bibitem[Can \em{et~al.}(2020)Can, Iles-Smith, Chalabianloo, Ekiz,
+  Fern{\'a}ndez-{\'A}lvarez, Repetto, Riva, and Ersoy]{can2020relax}
+Can, Y.S.; Iles-Smith, H.; Chalabianloo, N.; Ekiz, D.;
+  Fern{\'a}ndez-{\'A}lvarez, J.; Repetto, C.; Riva, G.; Ersoy, C.
+\newblock How to Relax in Stressful Situations: A Smart Stress Reduction
+  System.
+\newblock {\em Healthcare} {\bf 2020}, {\em 8},~100.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/healthcare8020100}{\detokenize{10.3390/healthcare8020100}}}.
+
+\bibitem[Goldsack \em{et~al.}(2020)Goldsack, Coravos, Bakker, Bent, Dowling,
+  Fitzer-Attas, Godfrey, Godino, Gujar, Izmailova, Manta, Peterson,
+  Vandendriessche, Wood, Wang, and Dunn]{goldsack2020v3}
+Goldsack, J.C.; Coravos, A.; Bakker, J.P.; Bent, B.; Dowling, A.V.;
+  Fitzer-Attas, C.; Godfrey, A.; Godino, J.G.; Gujar, N.; Izmailova, E.; Manta,
+  C.; Peterson, B.; Vandendriessche, B.; Wood, W.A.; Wang, K.W.; Dunn, J.
+\newblock Verification, Analytical Validation, and Clinical Validation ({V3}):
+  The Foundation of Determining Fit-for-Purpose for Biometric Monitoring
+  Technologies ({BioMeTs}).
+\newblock {\em npj Digit. Med.} {\bf 2020}, {\em 3},~55.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1038/s41746-020-0260-4}{\detokenize{10.1038/s41746-020-0260-4}}}.
+
+\bibitem[Manta \em{et~al.}(2020)Manta, Patrick-Lake, and
+  Goldsack]{manta2020digitalmeasures}
+Manta, C.; Patrick-Lake, B.; Goldsack, J.C.
+\newblock Digital Measures That Matter to Patients: A Framework to Guide the
+  Selection and Development of Digital Measures of Health.
+\newblock {\em Digit. Biomark.} {\bf 2020}, {\em 4},~69--77.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1159/000509725}{\detokenize{10.1159/000509725}}}.
+
+\bibitem[Lai \em{et~al.}(2020)Lai, Ma, Wang, Cai, Hu, Wei, Wu, Du, Chen, Li,
+  Tan, Kang, Yao, Huang, Wang, Wang, Liu, and Hu]{lai2020mentalhealth}
+Lai, J.; Ma, S.; Wang, Y.; Cai, Z.; Hu, J.; Wei, N.; Wu, J.; Du, H.; Chen, T.;
+  Li, R.; Tan, H.; Kang, L.; Yao, L.; Huang, M.; Wang, H.; Wang, G.; Liu, Z.;
+  Hu, S.
+\newblock Factors Associated With Mental Health Outcomes Among Health Care
+  Workers Exposed to Coronavirus Disease 2019.
+\newblock {\em JAMA Netw. Open} {\bf 2020}, {\em 3},~e203976.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1001/jamanetworkopen.2020.3976}{\detokenize{10.1001/jamanetworkopen.2020.3976}}}.
+
+\bibitem[Sasangohar \em{et~al.}(2020)Sasangohar, Jones, Masud, Vahidy, and
+  Kash]{sasangohar2020provider}
+Sasangohar, F.; Jones, S.L.; Masud, F.N.; Vahidy, F.S.; Kash, B.A.
+\newblock Provider Burnout and Fatigue During the {COVID-19} Pandemic: Lessons
+  Learned From a High-Volume Intensive Care Unit.
+\newblock {\em Anesth. Analg.} {\bf 2020}, {\em 131},~106--111.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1213/ANE.0000000000004866}{\detokenize{10.1213/ANE.0000000000004866}}}.
+
+\bibitem[Dall'Ora \em{et~al.}(2020)Dall'Ora, Ball, Reinius, and
+  Griffiths]{dallora2020burnout}
+Dall'Ora, C.; Ball, J.; Reinius, M.; Griffiths, P.
+\newblock Burnout in Nursing: A Theoretical Review.
+\newblock {\em Hum. Resour. Health} {\bf 2020}, {\em 18},~41.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1186/s12960-020-00469-9}{\detokenize{10.1186/s12960-020-00469-9}}}.
+
+\bibitem[Hall \em{et~al.}(2016)Hall, Johnson, Watt, Tsipa, and
+  O'Connor]{hall2016staffwellbeing}
+Hall, L.H.; Johnson, J.; Watt, I.; Tsipa, A.; O'Connor, D.B.
+\newblock Healthcare Staff Wellbeing, Burnout, and Patient Safety: A Systematic
+  Review.
+\newblock {\em PLoS One} {\bf 2016}, {\em 11},~e0159015.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1371/journal.pone.0159015}{\detokenize{10.1371/journal.pone.0159015}}}.
+
+\bibitem[Hosseini \em{et~al.}(2022)Hosseini, Gottumukkala, Katragadda,
+  Bhupatiraju, Ashkar, Borst, and Cochran]{hosseini2022nurse}
+Hosseini, S.; Gottumukkala, R.; Katragadda, S.; Bhupatiraju, R.T.; Ashkar, Z.;
+  Borst, C.W.; Cochran, K.
+\newblock A Multimodal Sensor Dataset for Continuous Stress Detection of Nurses
+  in a Hospital.
+\newblock {\em Sci. Data} {\bf 2022}, {\em 9},~255.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1038/s41597-022-01361-y}{\detokenize{10.1038/s41597-022-01361-y}}}.
+
+\bibitem[Ruppel \em{et~al.}(2023)Ruppel, Dougherty, Bonafide, and
+  Lasater]{ruppel2023alarmburden}
+Ruppel, H.; Dougherty, M.; Bonafide, C.P.; Lasater, K.B.
+\newblock Alarm Burden and the Nursing Care Environment: A 213-Hospital
+  Cross-Sectional Study.
+\newblock {\em BMJ Open Qual.} {\bf 2023}, {\em 12},~e002342.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1136/bmjoq-2023-002342}{\detokenize{10.1136/bmjoq-2023-002342}}}.
+
+\bibitem[G{\"u}l{\c{s}}en and Arslan(2025)]{gulsen2025alarmfatigue}
+G{\"u}l{\c{s}}en, M.; Arslan, S.
+\newblock The Effect of Alarm Fatigue on the Tendency to Make Medical Errors in
+  Surgical Intensive Care Nurses: A Correlational Study Examining the Role of
+  Moderating Factors.
+\newblock {\em Healthcare} {\bf 2025}, {\em 13},~631.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/healthcare13060631}{\detokenize{10.3390/healthcare13060631}}}.
+
+\bibitem[Kreibig(2010)]{kreibig2010ans}
+Kreibig, S.D.
+\newblock Autonomic Nervous System Activity in Emotion: A Review.
+\newblock {\em Biol. Psychol.} {\bf 2010}, {\em 84},~394--421.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.biopsycho.2010.03.010}{\detokenize{10.1016/j.biopsycho.2010.03.010}}}.
+
+\bibitem[Boucsein(2012)]{boucsein2012eda}
+Boucsein, W.
+\newblock {\em Electrodermal Activity}, 2nd ed.; Springer: New York, NY, USA,
+  2012.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/978-1-4614-1126-0}{\detokenize{10.1007/978-1-4614-1126-0}}}.
+
+\bibitem[Virgillito \em{et~al.}(2025)Virgillito, Catalfo, and
+  Ledda]{virgillito2025wearablesorg}
+Virgillito, D.; Catalfo, P.; Ledda, C.
+\newblock Wearables in Healthcare Organizations: Implications for Occupational
+  Health, Organizational Performance, and Economic Outcomes.
+\newblock {\em Healthcare} {\bf 2025}, {\em 13},~2289.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/healthcare13182289}{\detokenize{10.3390/healthcare13182289}}}.
+
+\bibitem[Prajod and Andr\'e(2024)]{prajod2024}
+Prajod, P.; Andr\'e, E.
+\newblock Stressor Type Matters! --- Exploring Factors Influencing
+  Cross-Dataset Generalizability of Physiological Stress Detection,  2024,
+  \href{http://xxx.lanl.gov/abs/2405.09563}{{\normalfont [2405.09563]}}.
+\newblock Also presented at ICMI 2024; VERIFY proceedings pages.
+
+\bibitem[Vos \em{et~al.}(2023)Vos, Trinh, Sarnyai, and
+  Rahimi~Azghadi]{vos2023generalizable}
+Vos, G.; Trinh, K.; Sarnyai, Z.; Rahimi~Azghadi, M.
+\newblock Generalizable Machine Learning for Stress Monitoring from Wearable
+  Devices: A Systematic Literature Review.
+\newblock {\em Int. J. Med. Inform.} {\bf 2023}, {\em 173},~105026.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.ijmedinf.2023.105026}{\detokenize{10.1016/j.ijmedinf.2023.105026}}}.
+
+\bibitem[Tutunji \em{et~al.}(2023)Tutunji, Kogias, Kapteijns, Krentz, Krause,
+  Vassena, and Hermans]{tutunji2023prolonged}
+Tutunji, R.; Kogias, N.; Kapteijns, B.; Krentz, M.; Krause, F.; Vassena, E.;
+  Hermans, E.J.
+\newblock Detecting Prolonged Stress in Real Life Using Wearable Biosensors and
+  Ecological Momentary Assessments: Naturalistic Experimental Study.
+\newblock {\em J. Med. Internet Res.} {\bf 2023}, {\em 25},~e39995.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.2196/39995}{\detokenize{10.2196/39995}}}.
+
+\bibitem[Naegelin \em{et~al.}(2023)Naegelin, Weibel, Kerr, Schinazi, La~Marca,
+  von Wangenheim, Hoelscher, and Ferrario]{naegelin2023interpretable}
+Naegelin, M.; Weibel, R.P.; Kerr, J.I.; Schinazi, V.R.; La~Marca, R.; von
+  Wangenheim, F.; Hoelscher, C.; Ferrario, A.
+\newblock An Interpretable Machine Learning Approach to Multimodal Stress
+  Detection in a Simulated Office Environment.
+\newblock {\em J. Biomed. Inform.} {\bf 2023}, {\em 139},~104299.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.jbi.2023.104299}{\detokenize{10.1016/j.jbi.2023.104299}}}.
+
+\bibitem[Benchekroun \em{et~al.}(2023)Benchekroun, Velmovitsky, Istrate, Zalc,
+  Morita, and Lenne]{benchekroun2023crossdataset}
+Benchekroun, M.; Velmovitsky, P.E.; Istrate, D.; Zalc, V.; Morita, P.P.; Lenne,
+  D.
+\newblock Cross Dataset Analysis for Generalizability of {HRV}-Based Stress
+  Detection Models.
+\newblock {\em Sensors} {\bf 2023}, {\em 23},~1807.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/s23041807}{\detokenize{10.3390/s23041807}}}.
+
+\bibitem[Mihirette \em{et~al.}(2025)Mihirette, De~la Cal, Tan, and
+  Sedano]{mihirette2025crosscontextual}
+Mihirette, S.; De~la Cal, E.A.; Tan, Q.; Sedano, J.
+\newblock Cross-Contextual Stress Prediction: Simple Methodology for Comparing
+  Features and Sample Domain Adaptation Techniques in Vital Sign Analysis.
+\newblock {\em Appl. Intell.} {\bf 2025}, {\em 55},~420.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s10489-025-06277-9}{\detokenize{10.1007/s10489-025-06277-9}}}.
+
+\bibitem[Hongn \em{et~al.}(2025)Hongn, Bosch, Prado, Ferr{\'a}ndez, and
+  Bonomini]{hongn2025wearable}
+Hongn, A.; Bosch, F.; Prado, L.E.; Ferr{\'a}ndez, J.M.; Bonomini, M.P.
+\newblock Wearable Physiological Signals under Acute Stress and Exercise
+  Conditions.
+\newblock {\em Sci. Data} {\bf 2025}, {\em 12},~520.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1038/s41597-025-04845-9}{\detokenize{10.1038/s41597-025-04845-9}}}.
+
+\bibitem[Iqbal \em{et~al.}(2022)Iqbal, Simpkin, Roshan, Glynn, Killilea, Walsh,
+  Molloy, Ganly, Ryman, Coen, Elahi, Wijns, and
+  Shahzad]{talukdar2022stresspredict}
+Iqbal, T.; Simpkin, A.J.; Roshan, D.; Glynn, N.; Killilea, J.; Walsh, J.;
+  Molloy, G.; Ganly, S.; Ryman, H.; Coen, E.; Elahi, A.; Wijns, W.; Shahzad, A.
+\newblock Stress Monitoring Using Wearable Sensors: A Pilot Study and
+  {Stress-Predict} Dataset.
+\newblock {\em Sensors} {\bf 2022}, {\em 22},~8135.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/s22218135}{\detokenize{10.3390/s22218135}}}.
+
+\bibitem[Kirschbaum \em{et~al.}(1993)Kirschbaum, Pirke, and
+  Hellhammer]{kirschbaum1993tsst}
+Kirschbaum, C.; Pirke, K.M.; Hellhammer, D.H.
+\newblock The `{Trier Social Stress Test}'---A Tool for Investigating
+  Psychobiological Stress Responses in a Laboratory Setting.
+\newblock {\em Neuropsychobiology} {\bf 1993}, {\em 28},~76--81.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1159/000119004}{\detokenize{10.1159/000119004}}}.
+
+\bibitem[McCarthy \em{et~al.}(2016)McCarthy, Pradhan, Redpath, and
+  Adler]{mccarthy2016e4}
+McCarthy, C.; Pradhan, N.; Redpath, C.; Adler, A.
+\newblock Validation of the {Empatica E4} Wristband.
+\newblock  Proc. IEEE EMBS International Student Conference (ISC),  2016, pp.
+  1--4.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/EMBSISC.2016.7508621}{\detokenize{10.1109/EMBSISC.2016.7508621}}}.
+
+\bibitem[Greco \em{et~al.}(2016)Greco, Valenza, Lanata, Scilingo, and
+  Citi]{greco2016cvxeda}
+Greco, A.; Valenza, G.; Lanata, A.; Scilingo, E.P.; Citi, L.
+\newblock {cvxEDA}: A Convex Optimization Approach to Electrodermal Activity
+  Processing.
+\newblock {\em IEEE Trans. Biomed. Eng.} {\bf 2016}, {\em 63},~797--804.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/TBME.2015.2474131}{\detokenize{10.1109/TBME.2015.2474131}}}.
+
+\bibitem[Makowski \em{et~al.}(2021)Makowski, Pham, Lau, Brammer, Lespinasse,
+  Pham, Sch\"olzel, and Chen]{makowski2021neurokit}
+Makowski, D.; Pham, T.; Lau, Z.J.; Brammer, J.C.; Lespinasse, F.; Pham, H.;
+  Sch\"olzel, C.; Chen, S.H.A.
+\newblock {NeuroKit2}: A {Python} Toolbox for Neurophysiological Signal
+  Processing.
+\newblock {\em Behav. Res. Methods} {\bf 2021}, {\em 53},~1689--1696.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3758/s13428-020-01516-y}{\detokenize{10.3758/s13428-020-01516-y}}}.
+
+\bibitem[Benedek and Kaernbach(2010)]{benedek2010phasic}
+Benedek, M.; Kaernbach, C.
+\newblock A Continuous Measure of Phasic Electrodermal Activity.
+\newblock {\em J. Neurosci. Methods} {\bf 2010}, {\em 190},~80--91.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.jneumeth.2010.04.028}{\detokenize{10.1016/j.jneumeth.2010.04.028}}}.
+
+\bibitem[Shaffer and Ginsberg(2017)]{shaffer2017hrv}
+Shaffer, F.; Ginsberg, J.P.
+\newblock An Overview of Heart Rate Variability Metrics and Norms.
+\newblock {\em Front. Public Health} {\bf 2017}, {\em 5},~258.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3389/fpubh.2017.00258}{\detokenize{10.3389/fpubh.2017.00258}}}.
+
+\bibitem[Sun \em{et~al.}(2016)Sun, Feng, and Saenko]{sun2016coral}
+Sun, B.; Feng, J.; Saenko, K.
+\newblock Return of Frustratingly Easy Domain Adaptation.
+\newblock  Proceedings of the AAAI Conference on Artificial Intelligence,
+  2016, Vol.~30, pp. 2058--2065.
+\newblock CORAL,
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1609/aaai.v30i1.10306}{\detokenize{10.1609/aaai.v30i1.10306}}}.
+
+\bibitem[Fernando \em{et~al.}(2013)Fernando, Habrard, Sebban, and
+  Tuytelaars]{fernando2013subspace}
+Fernando, B.; Habrard, A.; Sebban, M.; Tuytelaars, T.
+\newblock Unsupervised Visual Domain Adaptation Using Subspace Alignment.
+\newblock  Proceedings of the IEEE International Conference on Computer Vision
+  (ICCV),  2013, pp. 2960--2967.
+\newblock Subspace Alignment,
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICCV.2013.368}{\detokenize{10.1109/ICCV.2013.368}}}.
+
+\bibitem[Pan \em{et~al.}(2011)Pan, Tsang, Kwok, and Yang]{pan2011tca}
+Pan, S.J.; Tsang, I.W.; Kwok, J.T.; Yang, Q.
+\newblock Domain Adaptation via Transfer Component Analysis.
+\newblock {\em IEEE Trans. Neural Netw.} {\bf 2011}, {\em 22},~199--210.
+\newblock TCA,
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/TNN.2010.2091281}{\detokenize{10.1109/TNN.2010.2091281}}}.
+
+\bibitem[Shimodaira(2000)]{shimodaira2000covariateshift}
+Shimodaira, H.
+\newblock Improving Predictive Inference under Covariate Shift by Weighting the
+  Log-Likelihood Function.
+\newblock {\em J. Stat. Plan. Inference} {\bf 2000}, {\em 90},~227--244.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0378-3758(00)00115-4}{\detokenize{10.1016/S0378-3758(00)00115-4}}}.
+
+\bibitem[Sugiyama \em{et~al.}(2008)Sugiyama, Suzuki, Nakajima, Kashima, von
+  B{\"u}nau, and Kawanabe]{sugiyama2008importance}
+Sugiyama, M.; Suzuki, T.; Nakajima, S.; Kashima, H.; von B{\"u}nau, P.;
+  Kawanabe, M.
+\newblock Direct Importance Estimation for Covariate Shift Adaptation.
+\newblock {\em Ann. Inst. Stat. Math.} {\bf 2008}, {\em 60},~699--746.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s10463-008-0197-x}{\detokenize{10.1007/s10463-008-0197-x}}}.
+
+\bibitem[Bickel \em{et~al.}(2009)Bickel, Br{\"u}ckner, and
+  Scheffer]{bickel2009discriminative}
+Bickel, S.; Br{\"u}ckner, M.; Scheffer, T.
+\newblock Discriminative Learning under Covariate Shift.
+\newblock {\em J. Mach. Learn. Res.} {\bf 2009}, {\em 10},~2137--2155.
+\newblock Classifier-based density-ratio weighting.
+
+\bibitem[Efron and Tibshirani(1993)]{efron1993bootstrap}
+Efron, B.; Tibshirani, R.J.
+\newblock {\em An Introduction to the Bootstrap}; Chapman \& Hall/CRC: New
+  York, NY, USA,  1993.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1201/9780429246593}{\detokenize{10.1201/9780429246593}}}.
+
+\bibitem[Ganin \em{et~al.}(2016)Ganin, Ustinova, Ajakan, Germain, Larochelle,
+  Laviolette, Marchand, and Lempitsky]{ganin2016dann}
+Ganin, Y.; Ustinova, E.; Ajakan, H.; Germain, P.; Larochelle, H.; Laviolette,
+  F.; Marchand, M.; Lempitsky, V.
+\newblock Domain-Adversarial Training of Neural Networks.
+\newblock {\em J. Mach. Learn. Res.} {\bf 2016}, {\em 17},~1--35.
+\newblock DANN.
+
+\bibitem[Vickers and Elkin(2006)]{vickers2006decisioncurve}
+Vickers, A.J.; Elkin, E.B.
+\newblock Decision Curve Analysis: A Novel Method for Evaluating Prediction
+  Models.
+\newblock {\em Med. Decis. Making} {\bf 2006}, {\em 26},~565--574.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1177/0272989X06295361}{\detokenize{10.1177/0272989X06295361}}}.
+
+\bibitem[Van~Calster \em{et~al.}(2019)Van~Calster, McLernon, van Smeden,
+  Wynants, Steyerberg, Bossuyt, Collins, Macaskill, Moons, and
+  Vickers]{vancalster2019calibration}
+Van~Calster, B.; McLernon, D.J.; van Smeden, M.; Wynants, L.; Steyerberg, E.W.;
+  Bossuyt, P.; Collins, G.S.; Macaskill, P.; Moons, K.G.M.; Vickers, A.J.
+\newblock Calibration: The Achilles Heel of Predictive Analytics.
+\newblock {\em BMC Med.} {\bf 2019}, {\em 17},~230.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1186/s12916-019-1466-7}{\detokenize{10.1186/s12916-019-1466-7}}}.
+
+\bibitem[Ancker \em{et~al.}(2017)Ancker, Edwards, Nosal, Hauser, Mauer, and
+  Kaushal]{ancker2017alertfatigue}
+Ancker, J.S.; Edwards, A.; Nosal, S.; Hauser, D.; Mauer, E.; Kaushal, R.
+\newblock Effects of Workload, Work Complexity, and Repeated Alerts on Alert
+  Fatigue in a Clinical Decision Support System.
+\newblock {\em BMC Med. Inform. Decis. Mak.} {\bf 2017}, {\em 17},~36.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1186/s12911-017-0430-8}{\detokenize{10.1186/s12911-017-0430-8}}}.
+
+\bibitem[Lewandowska \em{et~al.}(2020)Lewandowska, Weisbrot, Cieloszyk,
+  Medrzycka-Dabrowska, Krupa, and Ozga]{lewandowska2020alarmfatigue}
+Lewandowska, K.; Weisbrot, M.; Cieloszyk, A.; Medrzycka-Dabrowska, W.; Krupa,
+  S.; Ozga, D.
+\newblock Impact of Alarm Fatigue on the Work of Nurses in an Intensive Care
+  Environment---A Systematic Review.
+\newblock {\em Int. J. Environ. Res. Public Health} {\bf 2020}, {\em 17},~8409.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/ijerph17228409}{\detokenize{10.3390/ijerph17228409}}}.
+
+\bibitem[Martinez-Martin \em{et~al.}(2021)Martinez-Martin, Greely, and
+  Cho]{martinezmartin2021ethical}
+Martinez-Martin, N.; Greely, H.T.; Cho, M.K.
+\newblock Ethical Development of Digital Phenotyping Tools for Mental Health
+  Applications: Delphi Study.
+\newblock {\em JMIR Mhealth Uhealth} {\bf 2021}, {\em 9},~e27343.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.2196/27343}{\detokenize{10.2196/27343}}}.
+
+\bibitem[Ajunwa \em{et~al.}(2017)Ajunwa, Crawford, and
+  Schultz]{ajunwa2017surveillance}
+Ajunwa, I.; Crawford, K.; Schultz, J.
+\newblock Limitless Worker Surveillance.
+\newblock {\em Calif. Law Rev.} {\bf 2017}, {\em 105},~735--776.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.15779/Z38BR8MF94}{\detokenize{10.15779/Z38BR8MF94}}}.
+
+\bibitem[Wang and Deng(2018)]{wang2018dasurvey}
+Wang, M.; Deng, W.
+\newblock Deep Visual Domain Adaptation: A Survey.
+\newblock {\em Neurocomputing} {\bf 2018}, {\em 312},~135--153.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.neucom.2018.05.083}{\detokenize{10.1016/j.neucom.2018.05.083}}}.
+
+\bibitem[Schmidt and Reiss(2018)]{schmidt2018wesaddataset}
+Schmidt, P.; Reiss, A.
+\newblock {WESAD} (Wearable Stress and Affect Detection) [Dataset].
+\newblock UCI Machine Learning Repository,  2018.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.24432/C57K5T}{\detokenize{10.24432/C57K5T}}}.
+
+\bibitem[Iqbal \em{et~al.}(2022)Iqbal, Elahi, Ganly, Wijns, and
+  Shahzad]{iqbal2022ppgresp}
+Iqbal, T.; Elahi, A.; Ganly, S.; Wijns, W.; Shahzad, A.
+\newblock Photoplethysmography-Based Respiratory Rate Estimation Algorithm for
+  Health Monitoring Applications.
+\newblock {\em J. Med. Biol. Eng.} {\bf 2022}, {\em 42},~242--252.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s40846-022-00700-z}{\detokenize{10.1007/s40846-022-00700-z}}}.
+
+\bibitem[Hosseini \em{et~al.}(2021)Hosseini, Katragadda, Bhupatiraju, Ashkar,
+  Borst, Cochran, and Gottumukkala]{hosseini2021nursedryad}
+Hosseini, S.; Katragadda, S.; Bhupatiraju, R.T.; Ashkar, Z.; Borst, C.W.;
+  Cochran, K.; Gottumukkala, R.
+\newblock A Multi-Modal Sensor Dataset for Continuous Stress Detection of
+  Nurses in a Hospital [Dataset].
+\newblock Dryad,  2021.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.5061/dryad.5hqbzkh6f}{\detokenize{10.5061/dryad.5hqbzkh6f}}}.
+
+\end{thebibliography}

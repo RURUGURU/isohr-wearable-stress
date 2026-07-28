@@ -1,0 +1,37 @@
+{
+  "typeCheckingMode": "all",
+  "pythonVersion": "3.11",
+  "pythonPlatform": "All",
+  "extraPaths": [
+    "."
+  ],
+  "include": [
+    "scripts/analysis_adaptation.py",
+    "scripts/analysis_context.py",
+    "scripts/analysis_diagnostics.py",
+    "scripts/analysis_error_strata.py",
+    "scripts/analysis_hrv.py",
+    "scripts/main_revision.py",
+    "scripts/metrics.py",
+    "scripts/plot_figures.py",
+    "scripts/test_config.py",
+    "scripts/test_metrics.py",
+    "scripts/test_nurse.py",
+    "scripts/test_reproducibility.py",
+    "scripts/test_revision_analyses.py",
+    "scripts/utils_config.py",
+    "scripts/utils_paths.py",
+    "scripts/utils_time.py"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/.conda-env",
+    "**/.venv",
+    "**/build",
+    "**/dist"
+  ],
+  "reportMissingParameterType": "error",
+  "reportUnnecessaryTypeIgnoreComment": "error",
+  "reportUnusedCallResult": "warning",
+  "reportUnusedVariable": "error"
+}

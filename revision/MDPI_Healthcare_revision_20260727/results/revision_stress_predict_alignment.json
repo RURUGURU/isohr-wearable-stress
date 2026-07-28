@@ -1,0 +1,48 @@
+{
+  "analysis": "Stress-Predict protocol-label alignment sensitivity",
+  "results": [
+    {
+      "n_stress": 952,
+      "n_subjects": 35,
+      "n_windows": 2789,
+      "shift_seconds": -64.0,
+      "single_scr_auroc": 0.5481635087350127,
+      "within_logreg_auroc": 0.6222684501127616
+    },
+    {
+      "n_stress": 952,
+      "n_subjects": 35,
+      "n_windows": 2820,
+      "shift_seconds": -32.0,
+      "single_scr_auroc": 0.5547950443560722,
+      "within_logreg_auroc": 0.636672147445702
+    },
+    {
+      "n_stress": 952,
+      "n_subjects": 35,
+      "n_windows": 2846,
+      "shift_seconds": 0.0,
+      "single_scr_auroc": 0.5628322078567436,
+      "within_logreg_auroc": 0.6280475495372382
+    },
+    {
+      "n_stress": 952,
+      "n_subjects": 35,
+      "n_windows": 2860,
+      "shift_seconds": 32.0,
+      "single_scr_auroc": 0.5731049495269805,
+      "within_logreg_auroc": 0.6193223358525801
+    },
+    {
+      "n_stress": 952,
+      "n_subjects": 35,
+      "n_windows": 2832,
+      "shift_seconds": 64.0,
+      "single_scr_auroc": 0.5822308577686394,
+      "within_logreg_auroc": 0.6139856740568568
+    }
+  ],
+  "shift_convention": "positive values move all protocol intervals later",
+  "step_seconds": 32.0,
+  "window_seconds": 64.0
+}

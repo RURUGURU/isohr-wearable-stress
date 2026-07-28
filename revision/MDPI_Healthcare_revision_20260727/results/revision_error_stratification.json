@@ -1,0 +1,759 @@
+{
+  "analysis": "leave-one-dataset-out error stratification",
+  "notes": [
+    "Between-stratum share is pooled minus within-stratum AUROC: the part of apparent discrimination that comes from score offsets between strata rather than ranking inside them.",
+    "Strata are descriptive conditions, not manipulated factors; a difference between strata is an association and does not identify a cause.",
+    "Per-subject values are sorted independently and carry no identifier, so rows cannot be matched back to a participant."
+  ],
+  "protocol": "fixed source-trained scores, stratified without refitting; within-stratum AUROC combined with n_stress * n_non_stress weights",
+  "step_seconds": 32.0,
+  "suppression_rule": "strata with fewer than 20 windows or 3 subjects are reported with counts but no AUROC",
+  "targets": [
+    {
+      "n_subjects": 15,
+      "n_windows": 1133,
+      "per_subject": {
+        "first_quartile": 0.9523524720893142,
+        "maximum": 1.0,
+        "median": 0.9848214285714286,
+        "minimum": 0.4358264081255771,
+        "n_evaluable_subjects": 15,
+        "n_single_class_subjects": 0,
+        "sorted_logistic_auroc": [
+          0.4358,
+          0.8325,
+          0.8713,
+          0.9424,
+          0.9623,
+          0.9713,
+          0.9833,
+          0.9848,
+          0.9953,
+          0.9957,
+          0.997,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "third_quartile": 0.9985119047619048
+      },
+      "stratifiers": [
+        {
+          "between_stratum_share_logistic": 0.03284276698434441,
+          "between_stratum_share_single": 0.033137241913115734,
+          "definition": "ACC magnitude SD in g; tertile cuts 0.0095, 0.0332",
+          "pooled_logistic_auroc": 0.8899061786970452,
+          "pooled_single_auroc": 0.8974658363604913,
+          "strata": [
+            {
+              "logistic_auroc": 0.9683350357507662,
+              "n_non_stress": 356,
+              "n_stress": 22,
+              "n_subjects": 15,
+              "n_windows": 378,
+              "single_auroc": 0.9678243105209398,
+              "status": "ok",
+              "stratum": "m1_low"
+            },
+            {
+              "logistic_auroc": 0.8625444839857651,
+              "n_non_stress": 281,
+              "n_stress": 96,
+              "n_subjects": 15,
+              "n_windows": 377,
+              "single_auroc": 0.8719602609727165,
+              "status": "ok",
+              "stratum": "m2_mid"
+            },
+            {
+              "logistic_auroc": 0.8282041844794881,
+              "n_non_stress": 209,
+              "n_stress": 169,
+              "n_subjects": 15,
+              "n_windows": 378,
+              "single_auroc": 0.8355510885875258,
+              "status": "ok",
+              "stratum": "m3_high"
+            }
+          ],
+          "stratified_logistic_auroc": 0.8570634117127008,
+          "stratified_single_auroc": 0.8643285944473755,
+          "stratifier": "movement (within-corpus tertile)"
+        },
+        {
+          "between_stratum_share_logistic": -0.004973833227235547,
+          "between_stratum_share_single": -0.0015690421608979266,
+          "definition": "ACC magnitude SD at or above 0.0796 g",
+          "pooled_logistic_auroc": 0.8899061786970452,
+          "pooled_single_auroc": 0.8974658363604913,
+          "strata": [
+            {
+              "logistic_auroc": 0.8964161057092994,
+              "n_non_stress": 840,
+              "n_stress": 191,
+              "n_subjects": 15,
+              "n_windows": 1031,
+              "single_auroc": 0.90035838942907,
+              "status": "ok",
+              "stratum": "a1_below_gate"
+            },
+            {
+              "logistic_auroc": 0.4670138888888889,
+              "n_non_stress": 6,
+              "n_stress": 96,
+              "n_subjects": 14,
+              "n_windows": 102,
+              "single_auroc": 0.5303819444444444,
+              "status": "ok",
+              "stratum": "a2_at_or_above_gate"
+            }
+          ],
+          "stratified_logistic_auroc": 0.8948800119242808,
+          "stratified_single_auroc": 0.8990348785213892,
+          "stratifier": "movement (absolute gate)"
+        },
+        {
+          "between_stratum_share_logistic": -0.02252463131308946,
+          "between_stratum_share_single": -0.0207681622362188,
+          "definition": "mean HR bands at 70.0 and 90.0 bpm",
+          "pooled_logistic_auroc": 0.8899061786970452,
+          "pooled_single_auroc": 0.8974658363604913,
+          "strata": [
+            {
+              "logistic_auroc": 0.9543085849360695,
+              "n_non_stress": 454,
+              "n_stress": 82,
+              "n_subjects": 15,
+              "n_windows": 536,
+              "single_auroc": 0.9558531213065433,
+              "status": "ok",
+              "stratum": "h1_below_70"
+            },
+            {
+              "logistic_auroc": 0.8896429670667897,
+              "n_non_stress": 380,
+              "n_stress": 171,
+              "n_subjects": 15,
+              "n_windows": 551,
+              "single_auroc": 0.8977300707910127,
+              "status": "ok",
+              "stratum": "h2_70_to_90"
+            },
+            {
+              "logistic_auroc": 0.7205882352941178,
+              "n_non_stress": 12,
+              "n_stress": 34,
+              "n_subjects": 5,
+              "n_windows": 46,
+              "single_auroc": 0.7512254901960784,
+              "status": "ok",
+              "stratum": "h3_at_or_above_90"
+            }
+          ],
+          "stratified_logistic_auroc": 0.9124308100101347,
+          "stratified_single_auroc": 0.9182339985967101,
+          "stratifier": "heart-rate band"
+        },
+        {
+          "between_stratum_share_logistic": 0.03844260540996802,
+          "between_stratum_share_single": 0.03927524659466297,
+          "definition": "fewer than 3 valid NN intervals, or artifact fraction split at the within-target median",
+          "pooled_logistic_auroc": 0.8899061786970452,
+          "pooled_single_auroc": 0.8974658363604913,
+          "strata": [
+            {
+              "logistic_auroc": null,
+              "n_non_stress": 17,
+              "n_stress": 1,
+              "n_subjects": 4,
+              "n_windows": 18,
+              "single_auroc": null,
+              "status": "suppressed_small_cell",
+              "stratum": "q0_too_few_beats"
+            },
+            {
+              "logistic_auroc": 0.7641299249530958,
+              "n_non_stress": 533,
+              "n_stress": 32,
+              "n_subjects": 15,
+              "n_windows": 565,
+              "single_auroc": 0.7860870075046904,
+              "status": "ok",
+              "stratum": "q1_low_artifact"
+            },
+            {
+              "logistic_auroc": 0.8712758033624175,
+              "n_non_stress": 296,
+              "n_stress": 254,
+              "n_subjects": 15,
+              "n_windows": 550,
+              "single_auroc": 0.8745477761225793,
+              "status": "ok",
+              "stratum": "q2_high_artifact"
+            }
+          ],
+          "stratified_logistic_auroc": 0.8514635732870772,
+          "stratified_single_auroc": 0.8581905897658283,
+          "stratifier": "beat-quality band"
+        },
+        {
+          "between_stratum_share_logistic": 0.06395435274521932,
+          "between_stratum_share_single": 0.04965375684109463,
+          "definition": "quartile cuts 0.99, 1.33, 1.35",
+          "pooled_logistic_auroc": 0.8899061786970452,
+          "pooled_single_auroc": 0.8974658363604913,
+          "strata": [
+            {
+              "logistic_auroc": 0.7763282378130757,
+              "n_non_stress": 151,
+              "n_stress": 133,
+              "n_subjects": 15,
+              "n_windows": 284,
+              "single_auroc": 0.7804112931334961,
+              "status": "ok",
+              "stratum": "d1_nearest"
+            },
+            {
+              "logistic_auroc": 0.8799134511359539,
+              "n_non_stress": 236,
+              "n_stress": 47,
+              "n_subjects": 15,
+              "n_windows": 283,
+              "single_auroc": 0.8876217093400649,
+              "status": "ok",
+              "stratum": "d2"
+            },
+            {
+              "logistic_auroc": 0.41417910447761197,
+              "n_non_stress": 268,
+              "n_stress": 15,
+              "n_subjects": 14,
+              "n_windows": 283,
+              "single_auroc": 0.6292288557213931,
+              "status": "ok",
+              "stratum": "d3"
+            },
+            {
+              "logistic_auroc": 0.9428067379922603,
+              "n_non_stress": 191,
+              "n_stress": 92,
+              "n_subjects": 15,
+              "n_windows": 283,
+              "single_auroc": 0.9497211472797633,
+              "status": "ok",
+              "stratum": "d4_farthest"
+            }
+          ],
+          "stratified_logistic_auroc": 0.8259518259518259,
+          "stratified_single_auroc": 0.8478120795193966,
+          "stratifier": "distance to source (Mahalanobis quartile)"
+        }
+      ],
+      "target": "WESAD"
+    },
+    {
+      "n_subjects": 35,
+      "n_windows": 2846,
+      "per_subject": {
+        "first_quartile": 0.541358024691358,
+        "maximum": 0.8339506172839506,
+        "median": 0.5887096774193549,
+        "minimum": 0.2971264367816092,
+        "n_evaluable_subjects": 33,
+        "n_single_class_subjects": 2,
+        "sorted_logistic_auroc": [
+          0.2971,
+          0.3167,
+          0.4185,
+          0.437,
+          0.4785,
+          0.4815,
+          0.5298,
+          0.5309,
+          0.5414,
+          0.5416,
+          0.5441,
+          0.5442,
+          0.5492,
+          0.55,
+          0.5613,
+          0.5615,
+          0.5887,
+          0.62,
+          0.6207,
+          0.6213,
+          0.6231,
+          0.6301,
+          0.6331,
+          0.6335,
+          0.6568,
+          0.6885,
+          0.7351,
+          0.7388,
+          0.7461,
+          0.7526,
+          0.7564,
+          0.79,
+          0.834
+        ],
+        "third_quartile": 0.6567887931034483
+      },
+      "stratifiers": [
+        {
+          "between_stratum_share_logistic": -0.03574538733040422,
+          "between_stratum_share_single": -0.03610065416847541,
+          "definition": "ACC magnitude SD in g; tertile cuts 0.0145, 0.0454",
+          "pooled_logistic_auroc": 0.5637916729521798,
+          "pooled_single_auroc": 0.5628322078567436,
+          "strata": [
+            {
+              "logistic_auroc": 0.556964635529436,
+              "n_non_stress": 583,
+              "n_stress": 366,
+              "n_subjects": 35,
+              "n_windows": 949,
+              "single_auroc": 0.5547947773434938,
+              "status": "ok",
+              "stratum": "m1_low"
+            },
+            {
+              "logistic_auroc": 0.6145058170003145,
+              "n_non_stress": 658,
+              "n_stress": 290,
+              "n_subjects": 34,
+              "n_windows": 948,
+              "single_auroc": 0.6189969604863221,
+              "status": "ok",
+              "stratum": "m2_mid"
+            },
+            {
+              "logistic_auroc": 0.6317567567567568,
+              "n_non_stress": 653,
+              "n_stress": 296,
+              "n_subjects": 35,
+              "n_windows": 949,
+              "single_auroc": 0.627850668432598,
+              "status": "ok",
+              "stratum": "m3_high"
+            }
+          ],
+          "stratified_logistic_auroc": 0.599537060282584,
+          "stratified_single_auroc": 0.598932862025219,
+          "stratifier": "movement (within-corpus tertile)"
+        },
+        {
+          "between_stratum_share_logistic": -0.010697373120772236,
+          "between_stratum_share_single": -0.012010355974071407,
+          "definition": "ACC magnitude SD at or above 0.0796 g",
+          "pooled_logistic_auroc": 0.5637916729521798,
+          "pooled_single_auroc": 0.5628322078567436,
+          "strata": [
+            {
+              "logistic_auroc": 0.5740014414084018,
+              "n_non_stress": 1609,
+              "n_stress": 827,
+              "n_subjects": 35,
+              "n_windows": 2436,
+              "single_auroc": 0.5745767271912902,
+              "status": "ok",
+              "stratum": "a1_below_gate"
+            },
+            {
+              "logistic_auroc": 0.592701754385965,
+              "n_non_stress": 285,
+              "n_stress": 125,
+              "n_subjects": 27,
+              "n_windows": 410,
+              "single_auroc": 0.5847719298245615,
+              "status": "ok",
+              "stratum": "a2_at_or_above_gate"
+            }
+          ],
+          "stratified_logistic_auroc": 0.574489046072952,
+          "stratified_single_auroc": 0.574842563830815,
+          "stratifier": "movement (absolute gate)"
+        },
+        {
+          "between_stratum_share_logistic": 0.0148693314304712,
+          "between_stratum_share_single": 0.020926383318444763,
+          "definition": "mean HR bands at 70.0 and 90.0 bpm",
+          "pooled_logistic_auroc": 0.5637916729521798,
+          "pooled_single_auroc": 0.5628322078567436,
+          "strata": [
+            {
+              "logistic_auroc": 0.5854240653759499,
+              "n_non_stress": 406,
+              "n_stress": 129,
+              "n_subjects": 33,
+              "n_windows": 535,
+              "single_auroc": 0.5950185206400123,
+              "status": "ok",
+              "stratum": "h1_below_70"
+            },
+            {
+              "logistic_auroc": 0.5451650853835561,
+              "n_non_stress": 1197,
+              "n_stress": 583,
+              "n_subjects": 35,
+              "n_windows": 1780,
+              "single_auroc": 0.5357862924893709,
+              "status": "ok",
+              "stratum": "h2_70_to_90"
+            },
+            {
+              "logistic_auroc": 0.5590922107674685,
+              "n_non_stress": 291,
+              "n_stress": 240,
+              "n_subjects": 26,
+              "n_windows": 531,
+              "single_auroc": 0.5632230813287514,
+              "status": "ok",
+              "stratum": "h3_at_or_above_90"
+            }
+          ],
+          "stratified_logistic_auroc": 0.5489223415217086,
+          "stratified_single_auroc": 0.5419058245382988,
+          "stratifier": "heart-rate band"
+        },
+        {
+          "between_stratum_share_logistic": 0.0031706432579856614,
+          "between_stratum_share_single": 0.0026643777981431027,
+          "definition": "fewer than 3 valid NN intervals, or artifact fraction split at the within-target median",
+          "pooled_logistic_auroc": 0.5637916729521798,
+          "pooled_single_auroc": 0.5628322078567436,
+          "strata": [
+            {
+              "logistic_auroc": 0.6290324857760021,
+              "n_non_stress": 367,
+              "n_stress": 193,
+              "n_subjects": 31,
+              "n_windows": 560,
+              "single_auroc": 0.613248436419082,
+              "status": "ok",
+              "stratum": "q0_too_few_beats"
+            },
+            {
+              "logistic_auroc": 0.5558159425248033,
+              "n_non_stress": 790,
+              "n_stress": 370,
+              "n_subjects": 35,
+              "n_windows": 1160,
+              "single_auroc": 0.5497417037290455,
+              "status": "ok",
+              "stratum": "q1_low_artifact"
+            },
+            {
+              "logistic_auroc": 0.5486182083273746,
+              "n_non_stress": 737,
+              "n_stress": 389,
+              "n_subjects": 35,
+              "n_windows": 1126,
+              "single_auroc": 0.5576836546410271,
+              "status": "ok",
+              "stratum": "q2_high_artifact"
+            }
+          ],
+          "stratified_logistic_auroc": 0.5606210296941941,
+          "stratified_single_auroc": 0.5601678300586005,
+          "stratifier": "beat-quality band"
+        },
+        {
+          "between_stratum_share_logistic": 0.0070803120172661105,
+          "between_stratum_share_single": 0.007537214577546969,
+          "definition": "quartile cuts 1.04, 1.38, 1.61",
+          "pooled_logistic_auroc": 0.5637916729521798,
+          "pooled_single_auroc": 0.5628322078567436,
+          "strata": [
+            {
+              "logistic_auroc": 0.5377440483123819,
+              "n_non_stress": 479,
+              "n_stress": 233,
+              "n_subjects": 34,
+              "n_windows": 712,
+              "single_auroc": 0.5399482111337102,
+              "status": "ok",
+              "stratum": "d1_nearest"
+            },
+            {
+              "logistic_auroc": 0.5062185642432556,
+              "n_non_stress": 486,
+              "n_stress": 225,
+              "n_subjects": 35,
+              "n_windows": 711,
+              "single_auroc": 0.49959304983996344,
+              "status": "ok",
+              "stratum": "d2"
+            },
+            {
+              "logistic_auroc": 0.5550807217473883,
+              "n_non_stress": 477,
+              "n_stress": 234,
+              "n_subjects": 35,
+              "n_windows": 711,
+              "single_auroc": 0.5443387267286639,
+              "status": "ok",
+              "stratum": "d3"
+            },
+            {
+              "logistic_auroc": 0.6232556160653506,
+              "n_non_stress": 452,
+              "n_stress": 260,
+              "n_subjects": 34,
+              "n_windows": 712,
+              "single_auroc": 0.6321051735874745,
+              "status": "ok",
+              "stratum": "d4_farthest"
+            }
+          ],
+          "stratified_logistic_auroc": 0.5567113609349137,
+          "stratified_single_auroc": 0.5552949932791966,
+          "stratifier": "distance to source (Mahalanobis quartile)"
+        }
+      ],
+      "target": "StrPred"
+    },
+    {
+      "n_subjects": 15,
+      "n_windows": 9226,
+      "per_subject": {
+        "first_quartile": 0.4334533333333333,
+        "maximum": 0.7250800182898949,
+        "median": 0.5108024691358025,
+        "minimum": 0.3696581196581197,
+        "n_evaluable_subjects": 13,
+        "n_single_class_subjects": 2,
+        "sorted_logistic_auroc": [
+          0.3697,
+          0.3941,
+          0.4089,
+          0.4335,
+          0.4596,
+          0.4955,
+          0.5108,
+          0.6029,
+          0.6508,
+          0.6642,
+          0.6855,
+          0.7178,
+          0.7251
+        ],
+        "third_quartile": 0.6642242439144331
+      },
+      "stratifiers": [
+        {
+          "between_stratum_share_logistic": 0.04182701797862348,
+          "between_stratum_share_single": 0.04088483057852299,
+          "definition": "ACC magnitude SD in g; tertile cuts 0.0566, 0.1267",
+          "pooled_logistic_auroc": 0.5412141951622935,
+          "pooled_single_auroc": 0.5533304459764,
+          "strata": [
+            {
+              "logistic_auroc": 0.45585551953404646,
+              "n_non_stress": 779,
+              "n_stress": 2297,
+              "n_subjects": 15,
+              "n_windows": 3076,
+              "single_auroc": 0.4756050058037413,
+              "status": "ok",
+              "stratum": "m1_low"
+            },
+            {
+              "logistic_auroc": 0.5466586244163272,
+              "n_non_stress": 581,
+              "n_stress": 2494,
+              "n_subjects": 15,
+              "n_windows": 3075,
+              "single_auroc": 0.565897914029816,
+              "status": "ok",
+              "stratum": "m2_mid"
+            },
+            {
+              "logistic_auroc": 0.5064708525182351,
+              "n_non_stress": 519,
+              "n_stress": 2556,
+              "n_subjects": 15,
+              "n_windows": 3075,
+              "single_auroc": 0.5037525517050063,
+              "status": "ok",
+              "stratum": "m3_high"
+            }
+          ],
+          "stratified_logistic_auroc": 0.49938717718367004,
+          "stratified_single_auroc": 0.512445615397877,
+          "stratifier": "movement (within-corpus tertile)"
+        },
+        {
+          "between_stratum_share_logistic": 0.03550435806402785,
+          "between_stratum_share_single": 0.0351857599209312,
+          "definition": "ACC magnitude SD at or above 0.0796 g",
+          "pooled_logistic_auroc": 0.5412141951622935,
+          "pooled_single_auroc": 0.5533304459764,
+          "strata": [
+            {
+              "logistic_auroc": 0.4846557028371757,
+              "n_non_stress": 1017,
+              "n_stress": 3262,
+              "n_subjects": 15,
+              "n_windows": 4279,
+              "single_auroc": 0.5128738785827927,
+              "status": "ok",
+              "stratum": "a1_below_gate"
+            },
+            {
+              "logistic_auroc": 0.5255453288160238,
+              "n_non_stress": 862,
+              "n_stress": 4085,
+              "n_subjects": 15,
+              "n_windows": 4947,
+              "single_auroc": 0.5231104118684452,
+              "status": "ok",
+              "stratum": "a2_at_or_above_gate"
+            }
+          ],
+          "stratified_logistic_auroc": 0.5057098370982657,
+          "stratified_single_auroc": 0.5181446860554688,
+          "stratifier": "movement (absolute gate)"
+        },
+        {
+          "between_stratum_share_logistic": -0.017533436418582515,
+          "between_stratum_share_single": -0.025841920671331287,
+          "definition": "mean HR bands at 70.0 and 90.0 bpm",
+          "pooled_logistic_auroc": 0.5412141951622935,
+          "pooled_single_auroc": 0.5533304459764,
+          "strata": [
+            {
+              "logistic_auroc": 0.34870348506712134,
+              "n_non_stress": 126,
+              "n_stress": 726,
+              "n_subjects": 15,
+              "n_windows": 852,
+              "single_auroc": 0.3386571341116796,
+              "status": "ok",
+              "stratum": "h1_below_70"
+            },
+            {
+              "logistic_auroc": 0.5584934386031096,
+              "n_non_stress": 1122,
+              "n_stress": 4366,
+              "n_subjects": 15,
+              "n_windows": 5488,
+              "single_auroc": 0.5864046884734821,
+              "status": "ok",
+              "stratum": "h2_70_to_90"
+            },
+            {
+              "logistic_auroc": 0.5731261046942698,
+              "n_non_stress": 631,
+              "n_stress": 2255,
+              "n_subjects": 15,
+              "n_windows": 2886,
+              "single_auroc": 0.5697358572778928,
+              "status": "ok",
+              "stratum": "h3_at_or_above_90"
+            }
+          ],
+          "stratified_logistic_auroc": 0.558747631580876,
+          "stratified_single_auroc": 0.5791723666477313,
+          "stratifier": "heart-rate band"
+        },
+        {
+          "between_stratum_share_logistic": -0.017850759667129124,
+          "between_stratum_share_single": -0.015567995974529625,
+          "definition": "fewer than 3 valid NN intervals, or artifact fraction split at the within-target median",
+          "pooled_logistic_auroc": 0.5412141951622935,
+          "pooled_single_auroc": 0.5533304459764,
+          "strata": [
+            {
+              "logistic_auroc": 0.5838315474583478,
+              "n_non_stress": 978,
+              "n_stress": 3295,
+              "n_subjects": 15,
+              "n_windows": 4273,
+              "single_auroc": 0.5963416715541612,
+              "status": "ok",
+              "stratum": "q0_too_few_beats"
+            },
+            {
+              "logistic_auroc": 0.5310925906128033,
+              "n_non_stress": 494,
+              "n_stress": 2613,
+              "n_subjects": 15,
+              "n_windows": 3107,
+              "single_auroc": 0.5278752608802763,
+              "status": "ok",
+              "stratum": "q1_low_artifact"
+            },
+            {
+              "logistic_auroc": 0.48444439132416894,
+              "n_non_stress": 407,
+              "n_stress": 1439,
+              "n_subjects": 15,
+              "n_windows": 1846,
+              "single_auroc": 0.5083143665492519,
+              "status": "ok",
+              "stratum": "q2_high_artifact"
+            }
+          ],
+          "stratified_logistic_auroc": 0.5590649548294226,
+          "stratified_single_auroc": 0.5688984419509296,
+          "stratifier": "beat-quality band"
+        },
+        {
+          "between_stratum_share_logistic": 0.05249195512709404,
+          "between_stratum_share_single": 0.056956882098933515,
+          "definition": "quartile cuts 1.36, 2.46, 4.65",
+          "pooled_logistic_auroc": 0.5412141951622935,
+          "pooled_single_auroc": 0.5533304459764,
+          "strata": [
+            {
+              "logistic_auroc": 0.4108965848865288,
+              "n_non_stress": 542,
+              "n_stress": 1765,
+              "n_subjects": 15,
+              "n_windows": 2307,
+              "single_auroc": 0.41860855294105354,
+              "status": "ok",
+              "stratum": "d1_nearest"
+            },
+            {
+              "logistic_auroc": 0.50021759766039,
+              "n_non_stress": 559,
+              "n_stress": 1747,
+              "n_subjects": 15,
+              "n_windows": 2306,
+              "single_auroc": 0.5210573095918073,
+              "status": "ok",
+              "stratum": "d2"
+            },
+            {
+              "logistic_auroc": 0.5536016212319774,
+              "n_non_stress": 447,
+              "n_stress": 1859,
+              "n_subjects": 15,
+              "n_windows": 2306,
+              "single_auroc": 0.5734205563839018,
+              "status": "ok",
+              "stratum": "d3"
+            },
+            {
+              "logistic_auroc": 0.5029584622723436,
+              "n_non_stress": 331,
+              "n_stress": 1976,
+              "n_subjects": 15,
+              "n_windows": 2307,
+              "single_auroc": 0.47537061046760526,
+              "status": "ok",
+              "stratum": "d4_farthest"
+            }
+          ],
+          "stratified_logistic_auroc": 0.4887222400351995,
+          "stratified_single_auroc": 0.4963735638774665,
+          "stratifier": "distance to source (Mahalanobis quartile)"
+        }
+      ],
+      "target": "Nurse"
+    }
+  ],
+  "window_seconds": 64.0
+}

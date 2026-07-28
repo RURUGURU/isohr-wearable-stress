@@ -1,0 +1,151 @@
+{
+  "analysis": "supervised target adaptation curve",
+  "notes": [
+    "This is not leave-one-dataset-out: it supplies real target labels and is reported separately as an upper bound on what adaptation could achieve.",
+    "mean_paired_gain is the headline quantity: within each draw the source-only model is re-scored on the SAME held-out subjects, so the gain isolates the effect of supplying labels. Comparing raw AUROC across k would confound it with evaluation-cohort composition.",
+    "k>0 uses 20 random subject draws at a fixed seed; the spread across draws is reported as SD, min and max."
+  ],
+  "protocol": "train on both source corpora plus k labeled target subjects; evaluate on the remaining target subjects",
+  "step_seconds": 32.0,
+  "targets": [
+    {
+      "n_subjects": 15,
+      "points": [
+        {
+          "max_auroc": 0.8899061786970452,
+          "mean_auroc": 0.8899061786970452,
+          "mean_paired_gain": 0.0,
+          "min_auroc": 0.8899061786970452,
+          "n_draws": 1,
+          "n_labeled_target_subjects": 0,
+          "sd_auroc": 0.0,
+          "sd_paired_gain": 0.0
+        },
+        {
+          "max_auroc": 0.9282326695860531,
+          "mean_auroc": 0.8887027885246124,
+          "mean_paired_gain": 0.0010302619079397169,
+          "min_auroc": 0.8734134500250365,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 2,
+          "sd_auroc": 0.011595359012640442,
+          "sd_paired_gain": 0.0004748598379614407
+        },
+        {
+          "max_auroc": 0.9336939102564101,
+          "mean_auroc": 0.8939951088480017,
+          "mean_paired_gain": 0.0015159235618210753,
+          "min_auroc": 0.8595038188202992,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 4,
+          "sd_auroc": 0.024264220051703766,
+          "sd_paired_gain": 0.0004800450026047286
+        },
+        {
+          "max_auroc": 0.9566137566137567,
+          "mean_auroc": 0.8962313512195796,
+          "mean_paired_gain": 0.002372397362169426,
+          "min_auroc": 0.8283582089552238,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 8,
+          "sd_auroc": 0.04142845567855652,
+          "sd_paired_gain": 0.0009102644691327184
+        }
+      ],
+      "target": "WESAD"
+    },
+    {
+      "n_subjects": 35,
+      "points": [
+        {
+          "max_auroc": 0.5637916729521798,
+          "mean_auroc": 0.5637916729521798,
+          "mean_paired_gain": 0.0,
+          "min_auroc": 0.5637916729521798,
+          "n_draws": 1,
+          "n_labeled_target_subjects": 0,
+          "sd_auroc": 0.0,
+          "sd_paired_gain": 0.0
+        },
+        {
+          "max_auroc": 0.5667399782332668,
+          "mean_auroc": 0.5618988752631285,
+          "mean_paired_gain": 0.000361693309649519,
+          "min_auroc": 0.5525053211687585,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 2,
+          "sd_auroc": 0.003525865371089413,
+          "sd_paired_gain": 0.0005487519946803958
+        },
+        {
+          "max_auroc": 0.5750522048448673,
+          "mean_auroc": 0.5648354762457186,
+          "mean_paired_gain": 0.0005760602514635338,
+          "min_auroc": 0.5522108450740371,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 4,
+          "sd_auroc": 0.0054394677994470024,
+          "sd_paired_gain": 0.0004914533920599615
+        },
+        {
+          "max_auroc": 0.584928837520298,
+          "mean_auroc": 0.5629642592951736,
+          "mean_paired_gain": 0.0011103035260275063,
+          "min_auroc": 0.5480120337310281,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 8,
+          "sd_auroc": 0.010541600299350919,
+          "sd_paired_gain": 0.0006784823608557155
+        }
+      ],
+      "target": "StrPred"
+    },
+    {
+      "n_subjects": 15,
+      "points": [
+        {
+          "max_auroc": 0.5412141951622935,
+          "mean_auroc": 0.5412141951622935,
+          "mean_paired_gain": 0.0,
+          "min_auroc": 0.5412141951622935,
+          "n_draws": 1,
+          "n_labeled_target_subjects": 0,
+          "sd_auroc": 0.0,
+          "sd_paired_gain": 0.0
+        },
+        {
+          "max_auroc": 0.59931241168867,
+          "mean_auroc": 0.5459155333761093,
+          "mean_paired_gain": 0.0053733173424394985,
+          "min_auroc": 0.4988465934336166,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 2,
+          "sd_auroc": 0.02575714836711241,
+          "sd_paired_gain": 0.02165589857893005
+        },
+        {
+          "max_auroc": 0.6638476981210322,
+          "mean_auroc": 0.5693695241644577,
+          "mean_paired_gain": 0.024082298717371615,
+          "min_auroc": 0.4778661271524649,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 4,
+          "sd_auroc": 0.04758730422406131,
+          "sd_paired_gain": 0.013277986521281645
+        },
+        {
+          "max_auroc": 0.7581981137407041,
+          "mean_auroc": 0.5649182258668126,
+          "mean_paired_gain": 0.02906392337237678,
+          "min_auroc": 0.4446806711222421,
+          "n_draws": 20,
+          "n_labeled_target_subjects": 8,
+          "sd_auroc": 0.07726933592810878,
+          "sd_paired_gain": 0.024329466329536933
+        }
+      ],
+      "target": "Nurse"
+    }
+  ],
+  "window_seconds": 64.0
+}

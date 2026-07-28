@@ -1,0 +1,46 @@
+{
+  "analysis": "within-subject label-scramble negative control",
+  "corpora": [
+    {
+      "corpus": "WESAD",
+      "max_deviation_from_chance": 0.03982669006021372,
+      "n_subjects": 15,
+      "n_windows": 1133,
+      "observed_auroc": 0.8758741690760373,
+      "scrambled_max_auroc": 0.5236694920140691,
+      "scrambled_mean_auroc": 0.48240459304289096,
+      "scrambled_min_auroc": 0.4601733099397863,
+      "scrambled_sd_auroc": 0.02302886874225997
+    },
+    {
+      "corpus": "StrPred",
+      "max_deviation_from_chance": 0.04612531390592145,
+      "n_subjects": 35,
+      "n_windows": 2846,
+      "observed_auroc": 0.6280475495372382,
+      "scrambled_max_auroc": 0.507879260468707,
+      "scrambled_mean_auroc": 0.48139746923056437,
+      "scrambled_min_auroc": 0.45387468609407855,
+      "scrambled_sd_auroc": 0.019256622055427716
+    },
+    {
+      "corpus": "Nurse",
+      "max_deviation_from_chance": 0.22320504153092796,
+      "n_subjects": 15,
+      "n_windows": 9226,
+      "observed_auroc": 0.4496594823923744,
+      "scrambled_max_auroc": 0.30733375622319226,
+      "scrambled_mean_auroc": 0.2975262754189366,
+      "scrambled_min_auroc": 0.27679495846907204,
+      "scrambled_sd_auroc": 0.010840272785724041
+    }
+  ],
+  "n_repeats": 5,
+  "notes": [
+    "Shuffling within subject preserves each subject's class balance, so the null is the pipeline itself rather than a different label distribution.",
+    "A scrambled AUROC far from 0.5 would indicate that label information reaches the model through feature construction, the split, or the evaluation path."
+  ],
+  "protocol": "labels permuted within each subject, then the full within-corpus LOSO logistic pipeline is re-run unchanged",
+  "step_seconds": 32.0,
+  "window_seconds": 64.0
+}

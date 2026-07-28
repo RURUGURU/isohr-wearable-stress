@@ -1,0 +1,30 @@
+# Scope of the licence, and third-party material
+
+The MIT licence in [LICENSE](LICENSE) covers the analysis code in `scripts/`,
+the documentation in `docs/`, and the environment manifests `env.yaml` and
+`requirements.txt`.
+
+The following are **not** covered by it.
+
+## Manuscript text and figures
+
+Files under `revision/**/` with the extensions `.tex`, `.md` and
+`figures/*.png` are the authors' manuscript material, made available under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0) — the same
+licence MDPI applies to the published article.
+
+## MDPI LaTeX template
+
+`revision/*/Definitions/` contains MDPI's own template files (`mdpi.cls`,
+`mdpi.bst`, `chicago2.bst`, `journalnames.tex`) together with MDPI, Creative
+Commons and ORCID logo artwork. These remain the property of their respective
+owners and are included only so that the manuscript can be rebuilt. They are
+not licensed for reuse under the terms of this repository.
+
+## Datasets
+
+No dataset is redistributed here. Each corpus must be obtained from its original
+source under its own licence — WESAD's EULA prohibits redistribution, and the
+Nurse corpus contains participant-level survey rows. See
+[data/README.md](data/README.md) for sources, terms and the citation each one
+requires.

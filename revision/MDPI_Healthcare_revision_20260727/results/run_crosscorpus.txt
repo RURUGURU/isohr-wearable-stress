@@ -1,0 +1,42 @@
+WESAD    windows=1133  +287/-846  subjects=15  (94s)
+StrPred  windows=2846  +952/-1894  subjects=35  (108s)
+Nurse    windows=9226  +7347/-1879  subjects=15  (205s)
+EDA backend (observed decompositions): cvxEDA(neurokit2):232
+EDA backend failures: none
+Signal-row exclusions: ibi_rows:1
+ANALYSIS_AUDIT_JSON={"corpus_input_exclusion_counts":{"Nurse.no_covering_session":42,"Nurse.signal_loading":1},"eda_backend_counts":{"cvxEDA(neurokit2)":232},"eda_backend_failure_counts":{},"input_parse_exclusion_counts":{"ibi_rows":1},"schema_version":1}
+
+=== WITHIN-corpus LOSO (reference) ===
+  WESAD   : single(scr_count)=0.897  LR=0.876  GBM=0.886
+  StrPred : single(scr_count)=0.563  LR=0.628  GBM=0.633
+  Nurse   : single(scr_count)=0.553  LR=0.450  GBM=0.489
+
+=== (A) LEAVE-ONE-DATASET-OUT + domain-generalization (CORAL) ===
+  test        single      LR     GBM   CORAL
+  WESAD        0.897   0.890   0.737   0.879
+  StrPred      0.563   0.564   0.558   0.564
+  Nurse        0.553   0.541   0.559   0.542
+  single=fixed SCR rule (no train); LR/GBM/CORAL trained on other corpora.
+  -> if CORAL & GBM do NOT beat LR/single, even a DG method cannot rescue transfer.
+
+=== (C) NURSE stratified by movement (real-world activity confound) ===
+  movement tertiles (ACC std, g): low<0.057  mid<0.127  high>=
+  low-move : n= 3075 (+2297/-778)  med-move=0.031  single=0.476  LR=0.396
+  mid-move : n= 3075 (+2493/-582)  med-move=0.087  single=0.566  LR=0.466
+  high-move: n= 3076 (+2557/-519)  med-move=0.184  single=0.504  LR=0.449
+  -> tests whether real-world physical activity (high movement) degrades the EDA stress signal.
+
+=== (2) iso-HR decomposition per corpus: transfer-weakness = HR-leakage or weak EDA? ===
+  corpus     unmatch_HR  match_HR match_nonHR match_EDA+T  HR-leak    mN
+  WESAD           0.955     0.931       0.920       0.942   +0.011   318
+  StrPred         0.675     0.628       0.640       0.607   -0.012  1524
+  Nurse           0.621     0.547       0.553       0.542   -0.005  2210
+  -> EDA+T(matched) ~0.5 for StrPred/Nurse => the EDA signal itself is weak (NOT just HR-leakage);
+     WESAD keeps strong matched EDA => transfer-weakness is genuine stressor-type, not HR-confound alone.
+
+=== (3) cross-corpus AUROC with subject-bootstrap 95% CI (single & LR) ===
+  test=WESAD    : single=0.897 [0.832-0.953]   LR=0.890 [0.814-0.949]
+  test=StrPred  : single=0.563 [0.525-0.607]   LR=0.564 [0.530-0.602]
+  test=Nurse    : single=0.553 [0.407-0.694]   LR=0.541 [0.423-0.656]
+
+TOTAL 244s

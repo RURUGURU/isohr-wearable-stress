@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Third-party data is NEVER redistributed from this repository.
+# WESAD is distributed under a EULA that prohibits redistribution; the Nurse and
+# PhysioNet corpora contain participant-level survey and demographic rows.
+# Obtain each dataset from its original source (see README, "Data and licences").
+# ---------------------------------------------------------------------------
+data/*
+!data/README.md
+
+# Agent/QA working evidence: contains local absolute paths and usernames.
+.omo/
+
+# Peer-review correspondence is confidential until the journal and the reviewers
+# agree to publish it. Re-add after acceptance if permission is granted.
+revision/review*.txt
+revision/**/reviews/
+revision/**/response_to_reviewers.md
+revision/**/major_revision_matrix.md
+
+# The frozen 2026-06-30 submission snapshot is kept locally for provenance but
+# not published: it is superseded by the current revision, and publishing two
+# manuscript versions invites readers to cite the wrong one. It also still
+# carries the first author's personal e-mail in both the .tex and the .pdf.
+revision/MDPI_Healthcare_submission_20260630/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# LaTeX build products (the committed PDF is the authoritative build)
+*.aux
+*.bbl-backup
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Editors / OS
+.DS_Store
+*.swp

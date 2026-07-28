@@ -1,0 +1,48 @@
+name: checks
+
+# Only the data-free surface can run in CI: the three corpora are licensed
+# third-party inputs and are never redistributed (see data/README.md).
+# Anything that calls build_all() is therefore out of scope here and must be
+# verified locally with `bash scripts/run_tests.sh full`.
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  quality-and-fast-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.13"
+          cache: pip
+
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Type check (strict surface)
+        run: basedpyright
+
+      - name: Lint (strict surface)
+        run: |
+          ruff check \
+            scripts/utils_config.py scripts/utils_paths.py scripts/utils_time.py \
+            scripts/metrics.py scripts/analysis_diagnostics.py scripts/analysis_hrv.py \
+            scripts/analysis_adaptation.py scripts/analysis_context.py \
+            scripts/analysis_error_strata.py scripts/main_revision.py \
+            scripts/plot_figures.py scripts/test_*.py
+
+      - name: Tests that need no raw data
+        run: pytest -q -m "not integration"
+
+      - name: Reviewer-analysis CLI is reachable
+        run: python -m scripts.main_revision --help

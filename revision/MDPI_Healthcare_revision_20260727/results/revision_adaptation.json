@@ -1,0 +1,311 @@
+{
+  "analysis": "unsupervised domain-adaptation sweep under leave-one-dataset-out",
+  "component_grid": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "notes": [
+    "Subspace alignment and transfer components report the component count that maximizes target AUROC, an optimistic upper bound no honest a-priori rule can exceed; the full grid is reported alongside.",
+    "All four adaptation methods are transductive: they use the unlabeled target feature distribution, which the single SCR score and plain logistic model never see.",
+    "Paired differences are single-SCR minus method on identical subject-cluster bootstrap resamples; an interval containing zero means the tested comparison does not separate them."
+  ],
+  "protocol": "train on the other two corpora; adapt with unlabeled target features only",
+  "step_seconds": 32.0,
+  "targets": [
+    {
+      "methods": [
+        {
+          "auroc": 0.8899061786970452,
+          "ci_high": 0.949193413957061,
+          "ci_low": 0.8142258505714928,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "Logistic (no adaptation)",
+          "paired_diff_high": 0.021624102309924863,
+          "paired_diff_low": -0.003134898857497284,
+          "paired_diff_vs_single": 0.00749930746653963
+        },
+        {
+          "auroc": 0.878613026251843,
+          "ci_high": 0.9301718868295616,
+          "ci_low": 0.8294381759687474,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "CORAL",
+          "paired_diff_high": 0.03632766909507758,
+          "paired_diff_low": -0.0074566525046012525,
+          "paired_diff_vs_single": 0.01758172750452311
+        },
+        {
+          "auroc": 0.8945766509336824,
+          "ci_high": 0.95382958700714,
+          "ci_low": 0.8175955546129848,
+          "component_grid": {
+            "2": 0.8939876936763288,
+            "3": 0.8945766509336824,
+            "4": 0.8916442203935717,
+            "5": 0.8931269099925041,
+            "6": 0.8944983978715167,
+            "7": 0.890140937883543,
+            "8": 0.8900750405680348
+          },
+          "indistinguishable_from_single": true,
+          "method": "Subspace alignment",
+          "paired_diff_high": 0.017469230003668526,
+          "paired_diff_low": -0.004618143421524451,
+          "paired_diff_vs_single": 0.002994985172654559
+        },
+        {
+          "auroc": 0.8645110007331077,
+          "ci_high": 0.9210085346763385,
+          "ci_low": 0.8098685938420627,
+          "component_grid": {
+            "gamma0.5x_k2": 0.5284429288061878,
+            "gamma0.5x_k3": 0.8065707860726025,
+            "gamma0.5x_k4": 0.8641032610934012,
+            "gamma0.5x_k5": 0.8645110007331077,
+            "gamma0.5x_k6": 0.8141860445960083,
+            "gamma0.5x_k7": 0.8310475202016459,
+            "gamma0.5x_k8": 0.835590316389486,
+            "gamma1x_k2": 0.20536486519880395,
+            "gamma1x_k3": 0.5970996944011993,
+            "gamma1x_k4": 0.8239182543801122,
+            "gamma1x_k5": 0.6453118178598201,
+            "gamma1x_k6": 0.649821665389906,
+            "gamma1x_k7": 0.6588907834367097,
+            "gamma1x_k8": 0.6783552030049176,
+            "gamma2x_k2": 0.16026638989794154,
+            "gamma2x_k3": 0.6998747951005345,
+            "gamma2x_k4": 0.7420243655324092,
+            "gamma2x_k5": 0.6250936977454881,
+            "gamma2x_k6": 0.5955964118911705,
+            "gamma2x_k7": 0.6921977578438399,
+            "gamma2x_k8": 0.6926878691279315
+          },
+          "indistinguishable_from_single": true,
+          "method": "Transfer components",
+          "paired_diff_high": 0.06515022638393489,
+          "paired_diff_low": -0.00021152094321355558,
+          "paired_diff_vs_single": 0.030357318430547415
+        },
+        {
+          "auroc": 0.8969983772786058,
+          "ci_high": 0.9461684014749918,
+          "ci_low": 0.8497430770075333,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "Importance weighting",
+          "paired_diff_high": 0.014133160733546883,
+          "paired_diff_low": -0.02210811726670631,
+          "paired_diff_vs_single": -0.00011402531365999391
+        }
+      ],
+      "n_subjects": 15,
+      "n_windows": 1133,
+      "single_scr_auroc": 0.8974658363604913,
+      "target": "WESAD"
+    },
+    {
+      "methods": [
+        {
+          "auroc": 0.5637916729521798,
+          "ci_high": 0.6021928290219257,
+          "ci_low": 0.5299141878609535,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "Logistic (no adaptation)",
+          "paired_diff_high": 0.014696630357420186,
+          "paired_diff_low": -0.015417818331566881,
+          "paired_diff_vs_single": -0.000754466147764425
+        },
+        {
+          "auroc": 0.564054000692146,
+          "ci_high": 0.602088286337373,
+          "ci_low": 0.5307325028546317,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "CORAL",
+          "paired_diff_high": 0.014397411167137844,
+          "paired_diff_low": -0.015956381295408276,
+          "paired_diff_vs_single": -0.0010519825118245252
+        },
+        {
+          "auroc": 0.566858079028866,
+          "ci_high": 0.6088703028941947,
+          "ci_low": 0.5314335258690973,
+          "component_grid": {
+            "2": 0.5136965028883782,
+            "3": 0.5432031048956012,
+            "4": 0.566858079028866,
+            "5": 0.5658425989191875,
+            "6": 0.5654527122358974,
+            "7": 0.5653551019140497,
+            "8": 0.5637916729521798
+          },
+          "indistinguishable_from_single": true,
+          "method": "Subspace alignment",
+          "paired_diff_high": 0.0069523764577708366,
+          "paired_diff_low": -0.014206762602917497,
+          "paired_diff_vs_single": -0.003977441853499229
+        },
+        {
+          "auroc": 0.565491534522996,
+          "ci_high": 0.6023968576866424,
+          "ci_low": 0.5289327348380306,
+          "component_grid": {
+            "gamma0.5x_k2": 0.5253809020968472,
+            "gamma0.5x_k3": 0.5176081256156106,
+            "gamma0.5x_k4": 0.5480142954753179,
+            "gamma0.5x_k5": 0.5500297267798355,
+            "gamma0.5x_k6": 0.5483171093146869,
+            "gamma0.5x_k7": 0.5605904980788514,
+            "gamma0.5x_k8": 0.565491534522996,
+            "gamma1x_k2": 0.5246499338911912,
+            "gamma1x_k3": 0.5206057607837221,
+            "gamma1x_k4": 0.5398527415189941,
+            "gamma1x_k5": 0.5370880400734739,
+            "gamma1x_k6": 0.5517939224264152,
+            "gamma1x_k7": 0.552392894855936,
+            "gamma1x_k8": 0.5644228124195824,
+            "gamma2x_k2": 0.5206179620739531,
+            "gamma2x_k3": 0.5191626809118579,
+            "gamma2x_k4": 0.5290329701046206,
+            "gamma2x_k5": 0.5262610588057821,
+            "gamma2x_k6": 0.5255378550575458,
+            "gamma2x_k7": 0.5440705057102039,
+            "gamma2x_k8": 0.5450144418908006
+          },
+          "indistinguishable_from_single": true,
+          "method": "Transfer components",
+          "paired_diff_high": 0.020838751225645907,
+          "paired_diff_low": -0.023814512185798244,
+          "paired_diff_vs_single": -0.0021575205140148233
+        },
+        {
+          "auroc": 0.5651898298918301,
+          "ci_high": 0.6030931843575323,
+          "ci_low": 0.5315167830784949,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "Importance weighting",
+          "paired_diff_high": 0.01678352731018931,
+          "paired_diff_low": -0.020400182471270442,
+          "paired_diff_vs_single": -0.0021096331033833224
+        }
+      ],
+      "n_subjects": 35,
+      "n_windows": 2846,
+      "single_scr_auroc": 0.5628322078567436,
+      "target": "StrPred"
+    },
+    {
+      "methods": [
+        {
+          "auroc": 0.5412141951622935,
+          "ci_high": 0.6557414547016038,
+          "ci_low": 0.42251933003544134,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "Logistic (no adaptation)",
+          "paired_diff_high": 0.04870984158561552,
+          "paired_diff_low": -0.03715648820337648,
+          "paired_diff_vs_single": 0.008776540046185687
+        },
+        {
+          "auroc": 0.542280474491404,
+          "ci_high": 0.6632089522534773,
+          "ci_low": 0.41715132921481085,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "CORAL",
+          "paired_diff_high": 0.03375563161310988,
+          "paired_diff_low": -0.01618226382987145,
+          "paired_diff_vs_single": 0.009325860064304243
+        },
+        {
+          "auroc": 0.5736590758733802,
+          "ci_high": 0.7074391243287788,
+          "ci_low": 0.43140133828850785,
+          "component_grid": {
+            "2": 0.567897038561282,
+            "3": 0.5736590758733802,
+            "4": 0.5615670916065055,
+            "5": 0.5667607122137444,
+            "6": 0.557914650279576,
+            "7": 0.5375005441863763,
+            "8": 0.541167038379464
+          },
+          "indistinguishable_from_single": false,
+          "method": "Subspace alignment",
+          "paired_diff_high": -0.001669233100632917,
+          "paired_diff_low": -0.03862463912327762,
+          "paired_diff_vs_single": -0.020421430806196902
+        },
+        {
+          "auroc": 0.5713253584042262,
+          "ci_high": 0.7009316308780048,
+          "ci_low": 0.42108568299354854,
+          "component_grid": {
+            "gamma0.5x_k2": 0.47218731340564474,
+            "gamma0.5x_k3": 0.47275420892396114,
+            "gamma0.5x_k4": 0.5709167387238245,
+            "gamma0.5x_k5": 0.5713253584042262,
+            "gamma0.5x_k6": 0.5598138154596449,
+            "gamma0.5x_k7": 0.5524986466872578,
+            "gamma0.5x_k8": 0.5404519358293977,
+            "gamma1x_k2": 0.45564473572027786,
+            "gamma1x_k3": 0.4594527726993086,
+            "gamma1x_k4": 0.5633423887395108,
+            "gamma1x_k5": 0.5663988146914458,
+            "gamma1x_k6": 0.5333634238519007,
+            "gamma1x_k7": 0.5363453116632342,
+            "gamma1x_k8": 0.536335170419615,
+            "gamma2x_k2": 0.45223137421167225,
+            "gamma2x_k3": 0.45328591867316603,
+            "gamma2x_k4": 0.5470686264475086,
+            "gamma2x_k5": 0.5420404892048998,
+            "gamma2x_k6": 0.5330780202814731,
+            "gamma2x_k7": 0.5284375320762102,
+            "gamma2x_k8": 0.5134707225556397
+          },
+          "indistinguishable_from_single": true,
+          "method": "Transfer components",
+          "paired_diff_high": 0.02562657126348102,
+          "paired_diff_low": -0.06325420214254521,
+          "paired_diff_vs_single": -0.016671592188522922
+        },
+        {
+          "auroc": 0.5433093036565775,
+          "ci_high": 0.6583949976831679,
+          "ci_low": 0.4228122117907353,
+          "component_grid": null,
+          "indistinguishable_from_single": true,
+          "method": "Importance weighting",
+          "paired_diff_high": 0.04411270861813018,
+          "paired_diff_low": -0.034778993880481876,
+          "paired_diff_vs_single": 0.007168257088796891
+        }
+      ],
+      "n_subjects": 15,
+      "n_windows": 9226,
+      "single_scr_auroc": 0.5533304459764,
+      "target": "Nurse"
+    }
+  ],
+  "transfer_features": [
+    "scr_count",
+    "phasic_auc",
+    "scr_amp_mean",
+    "scr_amp_max",
+    "scl_slope",
+    "eda_decay",
+    "temp_slope",
+    "hr_slope"
+  ],
+  "window_seconds": 64.0
+}

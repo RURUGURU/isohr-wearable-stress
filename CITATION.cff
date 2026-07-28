@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: >-
+  If you use this analysis code, please cite both the software and the
+  associated article.
+title: >-
+  Iso-heart-rate, cross-corpus evaluation of wrist-wearable stress detection
+  (analysis code)
+abstract: >-
+  Analysis code for an iso-heart-rate, cross-corpus evaluation of binary
+  stress-versus-non-stress detection from wrist-worn Empatica E4 recordings
+  across the WESAD, Stress-Predict and Nurse corpora. Includes the iso-HR
+  matching procedure, leave-one-subject-out and leave-one-dataset-out
+  protocols, unsupervised domain-adaptation baselines, an accelerometer
+  context-aware transfer model, error stratification, and the reviewer-requested
+  robustness analyses.
+type: software
+license: MIT
+version: 1.0.0
+authors:
+  - family-names: Kwon
+    given-names: Nowon
+    orcid: "https://orcid.org/0000-0002-5072-3632"
+    affiliation: >-
+      AI-driven Medical Innovation Center, Kyungpook National University
+      Hospital, Daegu, Republic of Korea
+  - family-names: Yoon
+    given-names: Seonkyung
+    affiliation: Department of Nursing, Saekyung University, Yeongwol, Republic of Korea
+  - family-names: Hur
+    given-names: Jungyi
+    affiliation: Department of Nursing, Saekyung University, Yeongwol, Republic of Korea
+  - family-names: Kang
+    given-names: Hye Seung
+    affiliation: Department of Nursing, Saekyung University, Yeongwol, Republic of Korea
+keywords:
+  - wearable sensors
+  - electrodermal activity
+  - stress detection
+  - domain adaptation
+  - cross-corpus evaluation
+  - nursing workforce
+  - digital health
+references:
+  - type: article
+    title: >-
+      When Wellness Stress Detection Enters Healthcare Workflows: An
+      Iso-Heart-Rate, Cross-Corpus Evaluation of Wrist Wearables
+    authors:
+      - family-names: Kwon
+        given-names: Nowon
+        orcid: "https://orcid.org/0000-0002-5072-3632"
+      - family-names: Yoon
+        given-names: Seonkyung
+      - family-names: Hur
+        given-names: Jungyi
+      - family-names: Kang
+        given-names: Hye Seung
+    journal: Healthcare
+    year: 2026
+    notes: Under review. Update with volume, article number and DOI on acceptance.

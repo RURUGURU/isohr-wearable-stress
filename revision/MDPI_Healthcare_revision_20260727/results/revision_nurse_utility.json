@@ -1,0 +1,41 @@
+{
+  "analysis": "Nurse leave-one-dataset-out operational utility",
+  "models": [
+    {
+      "auroc": 0.5533304459764,
+      "average_precision": 0.8256105560335087,
+      "balanced_accuracy_at_0_5": null,
+      "brier_score": null,
+      "expected_calibration_error": null,
+      "false_positive_rate_at_0_5": null,
+      "model": "Single SCR",
+      "sensitivity_at_0_5": null
+    },
+    {
+      "auroc": 0.5412141951622935,
+      "average_precision": 0.8259899351254719,
+      "balanced_accuracy_at_0_5": 0.5239880976569888,
+      "brier_score": 0.24277508460366415,
+      "expected_calibration_error": 0.23762332893845975,
+      "false_positive_rate_at_0_5": 0.535391165513571,
+      "model": "LogReg",
+      "sensitivity_at_0_5": 0.5833673608275487
+    },
+    {
+      "auroc": 0.5592002340019528,
+      "average_precision": 0.8283138655220712,
+      "balanced_accuracy_at_0_5": 0.5407928264899134,
+      "brier_score": 0.344158660350301,
+      "expected_calibration_error": 0.37778815631873935,
+      "false_positive_rate_at_0_5": 0.2746141564662054,
+      "model": "GBM",
+      "sensitivity_at_0_5": 0.3561998094460324
+    }
+  ],
+  "n_subjects": 15,
+  "n_windows": 9226,
+  "step_seconds": 32.0,
+  "stress_prevalence": 0.7963364404942553,
+  "threshold_policy": "fixed probability threshold 0.5; no Nurse-label tuning",
+  "window_seconds": 64.0
+}

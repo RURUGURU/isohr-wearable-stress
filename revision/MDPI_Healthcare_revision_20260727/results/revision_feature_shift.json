@@ -1,0 +1,59 @@
+{
+  "analysis": "pairwise transfer-feature distribution shift",
+  "distance": "1D Wasserstein distance divided by pairwise pooled IQR",
+  "pairs": [
+    {
+      "datasets": [
+        "WESAD",
+        "StrPred"
+      ],
+      "feature_distances": {
+        "eda_decay": 2.9309330356197014,
+        "hr_slope": 1.448271508889213,
+        "phasic_auc": 1.2541144857525441,
+        "scl_slope": 0.6961600593108178,
+        "scr_amp_max": 0.3516682317716797,
+        "scr_amp_mean": 0.6725876728595621,
+        "scr_count": 0.1457453227634848,
+        "temp_slope": 0.1538626478419199
+      },
+      "mean_robust_wasserstein": 0.9566678706011154
+    },
+    {
+      "datasets": [
+        "WESAD",
+        "Nurse"
+      ],
+      "feature_distances": {
+        "eda_decay": 5.249842680975596,
+        "hr_slope": 0.8405621477282393,
+        "phasic_auc": 1.151979090719201,
+        "scl_slope": 2.562713429647262,
+        "scr_amp_max": 0.8071066884322449,
+        "scr_amp_mean": 1.0768171562374482,
+        "scr_count": 0.4597251209111416,
+        "temp_slope": 0.26941004288618053
+      },
+      "mean_robust_wasserstein": 1.5522695446921642
+    },
+    {
+      "datasets": [
+        "StrPred",
+        "Nurse"
+      ],
+      "feature_distances": {
+        "eda_decay": 5.5555903517985294,
+        "hr_slope": 0.15575922230690975,
+        "phasic_auc": 1.6174751256675366,
+        "scl_slope": 2.5514542056208973,
+        "scr_amp_max": 0.9709509628643089,
+        "scr_amp_mean": 1.4323528584062772,
+        "scr_count": 0.4308486664894813,
+        "temp_slope": 0.19054610327833468
+      },
+      "mean_robust_wasserstein": 1.6131221870540344
+    }
+  ],
+  "step_seconds": 32.0,
+  "window_seconds": 64.0
+}
